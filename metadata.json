@@ -1,5 +1,6 @@
 {
   "uuid": "glidedock@bquangthien25.github.io",
+  "version": 2,
   "name": "GlideDock",
   "description": "A featherweight dock with smooth magnification and a jitter-free app label.",
   "shell-version": ["45", "46", "47", "48", "49", "50"],

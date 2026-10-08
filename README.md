@@ -23,6 +23,7 @@ next to the pointer and the label above them stay exactly where they are.
 - **Trash and Downloads** – macOS-style items at the end of the dock: the trash shows whether it holds anything and can be emptied from its menu, the downloads folder lists the files changed last.
 - **Stacks** – click the downloads folder and its latest files fan out of the icon; click one to open it.
 - **Launch bounce** – the icon of an app that is starting bounces until its window appears.
+- **Minimize into the icon** – a minimized window flies to its app's icon in the dock instead of the middle of the screen edge.
 - **Intellihide** – the dock slides away while a window overlaps it and comes back when the pointer touches the screen edge.
 - **Bottom, left or right**, aligned to the start, centre or end of the edge.
 - **Pinned and running apps** with an optional separator and running indicators; icons never change places on their own.
