@@ -10,6 +10,10 @@ screen. Icons are rendered once at their magnified size and only ever scaled at
 paint time, so hovering the dock never triggers a relayout: the bar, the icons
 next to the pointer and the label above them stay exactly where they are.
 
+![The dock with its label above a magnified icon](docs/magnification.png)
+
+![The downloads folder fanned out into a stack](docs/stacks.jpg)
+
 ## Features
 
 - **Smooth magnification** – icons near the pointer rise and sink like a wave, updated once per frame.
