@@ -16,6 +16,9 @@ next to the pointer and the label above them stay exactly where they are.
 - **Jitter-free label** – a single tooltip placed on whole pixels at a fixed distance from the icon; it does not follow the animation.
 - **Same dock on the desktop and in the overview** – GlideDock can take the place of the built-in dash, so nothing changes when the overview opens.
 - **One Show Apps icon everywhere** – the dock and the shell's own dash share one flat symbolic icon that shell themes (WhiteSur, MacTahoe, …) cannot replace with a coloured one.
+- **Trash and Downloads** – macOS-style items at the end of the dock: the trash shows whether it holds anything and can be emptied from its menu, the downloads folder lists the files changed last.
+- **Stacks** – click the downloads folder and its latest files fan out of the icon; click one to open it.
+- **Launch bounce** – the icon of an app that is starting bounces until its window appears.
 - **Intellihide** – the dock slides away while a window overlaps it and comes back when the pointer touches the screen edge.
 - **Bottom, left or right**, aligned to the start, centre or end of the edge.
 - **Pinned and running apps** with an optional separator and running indicators; icons never change places on their own.
@@ -83,6 +86,10 @@ gnome-extensions prefs glidedock@bquangthien25.github.io
 | | Separator | On | Between pinned and other running apps |
 | | Running indicators | On | A dot under running apps |
 | | Order of running apps | Order started | Or by name |
+| | Show Trash | On | Click to open, right-click to empty |
+| | Show Downloads Folder | On | Click to open, right-click for recent files |
+| | Stacks Fan View | On | Click the downloads folder to fan out its latest files |
+| | Separate special items with divider | On | A line between the apps and these items |
 | Behavior | Intellihide | Off | Hide while a window overlaps the dock |
 | | Hide delay / Show delay | 300 ms / 100 ms | 0–2000 |
 | | Click on the focused app | Cycle through windows | Minimize, minimize-or-cycle, or nothing |
@@ -116,6 +123,8 @@ gsettings --schemadir ~/.local/share/gnome-shell/extensions/glidedock@bquangthie
 | `lib/magnifier.js` | Per-frame icon scaling around the pointer |
 | `lib/showAppsIcon.js` | The Show Apps icon shared with the shell's dash |
 | `lib/appModel.js`, `lib/appActions.js` | Which apps are shown, and what clicking them does |
+| `lib/places.js` | The trash and the downloads folder |
+| `lib/stacks.js`, `lib/bounce.js` | The fan of a stack, and the bounce of a launching app |
 | `lib/blur.js`, `lib/overlap.js` | Background blur and window overlap tracking |
 | `prefs.js`, `schemas/` | Preferences window and settings schema |
 | `po/` | Translations |

@@ -42,6 +42,49 @@
     background-image: none;
 }
 
+/* The downloads folder and the trash use the icon theme's full-colour icons;
+   the colour only matters for a theme that has nothing but symbolic ones. */
+.glidedock-place {
+    color: #ffffff;
+}
+
+/* Rows of their menus; file names can be very long. */
+.glidedock-menu-label {
+    max-width: 22em;
+}
+
+/* The fan of a stack. No padding around a row: its icon must touch the edge
+   of the row for the fan to line up with the dock icon (see stacks.js). */
+.glidedock-stack-button,
+.glidedock-stack-button:hover,
+.glidedock-stack-button:focus,
+.glidedock-stack-button:active {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.glidedock-stack-row {
+    spacing: 10px;
+}
+
+.glidedock-stack-label {
+    max-width: 20em;
+    background-color: rgba(18, 18, 22, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 8px;
+    padding: 4px 10px;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.glidedock-stack-button:hover .glidedock-stack-label,
+.glidedock-stack-button:focus .glidedock-stack-label {
+    background-color: rgba(78, 78, 88, 0.95);
+}
+
 .glidedock-dot {
     background-color: rgba(255, 255, 255, 0.50);
     border-radius: 99px;
@@ -51,23 +94,25 @@
     background-color: #ffffff;
 }
 
+/* A separator is inset 5px from both ends of the icons beside it; the larger
+   margin is the side of the running dots (2px gap + 5px dot). */
 .glidedock-separator {
     background-color: rgba(255, 255, 255, 0.18);
 }
 
 .glidedock.bottom .glidedock-separator {
     width: 1px;
-    margin: 4px 7px 12px 7px;
+    margin: 5px 7px 12px 7px;
 }
 
 .glidedock.left .glidedock-separator {
     height: 1px;
-    margin: 7px 4px 7px 12px;
+    margin: 7px 5px 7px 12px;
 }
 
 .glidedock.right .glidedock-separator {
     height: 1px;
-    margin: 7px 12px 7px 4px;
+    margin: 7px 12px 7px 5px;
 }
 
 .glidedock-label {

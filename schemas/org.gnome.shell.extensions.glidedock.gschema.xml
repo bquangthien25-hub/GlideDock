@@ -146,5 +146,25 @@
       <summary>Replace the dash in the overview</summary>
       <description>Keep the dock on screen in the overview and hide the shell's own dash, so that the same bar is shown everywhere.</description>
     </key>
+    <key name="show-trash" type="b">
+      <default>true</default>
+      <summary>Show the trash</summary>
+      <description>Whether the trash sits at the end of the dock. Its icon tells whether it holds anything, and its menu empties it.</description>
+    </key>
+    <key name="show-downloads" type="b">
+      <default>true</default>
+      <summary>Show the downloads folder</summary>
+      <description>Whether the downloads folder sits at the end of the dock, before the trash. Its menu lists the files changed last.</description>
+    </key>
+    <key name="show-places-separator" type="b">
+      <default>true</default>
+      <summary>Separate the special items</summary>
+      <description>Whether a line is drawn between the apps and the downloads folder and trash.</description>
+    </key>
+    <key name="stacks-fan-view" type="b">
+      <default>true</default>
+      <summary>Fan out the downloads folder</summary>
+      <description>Whether clicking the downloads folder fans its latest files out of the icon instead of opening the folder.</description>
+    </key>
   </schema>
 </schemalist>

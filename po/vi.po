@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlideDock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-08 23:45+0700\n"
+"POT-Creation-Date: 2026-10-09 00:24+0700\n"
 "PO-Revision-Date: 2026-10-08 23:15+0700\n"
 "Last-Translator: GlideDock contributors\n"
 "Language-Team: Vietnamese\n"
@@ -15,9 +15,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: lib/dock.js:455
+#: lib/dock.js:506
+msgid "Downloads"
+msgstr "Tải về"
+
+#: lib/dock.js:515
+msgid "Trash"
+msgstr "Thùng rác"
+
+#: lib/dock.js:525
 msgid "Show Apps"
 msgstr "Hiện ứng dụng"
+
+#: lib/dock.js:788
+msgid "No files"
+msgstr "Không có tệp nào"
+
+#: lib/dock.js:790
+msgid "Open Downloads"
+msgstr "Mở thư mục Tải về"
+
+#: lib/dock.js:821
+msgid "Open in Files"
+msgstr "Mở trong Tệp"
+
+#: lib/dock.js:853
+msgid "Open Trash"
+msgstr "Mở Thùng rác"
+
+#: lib/dock.js:856 lib/dock.js:879
+msgid "Empty Trash"
+msgstr "Dọn sạch thùng rác"
+
+#: lib/dock.js:869
+msgid "Empty all items from Trash?"
+msgstr "Dọn sạch mọi thứ trong Thùng rác?"
+
+#: lib/dock.js:870
+msgid "All items in the Trash will be permanently deleted."
+msgstr "Mọi thứ trong Thùng rác sẽ bị xoá vĩnh viễn."
+
+#: lib/dock.js:873
+msgid "Cancel"
+msgstr "Huỷ"
 
 #: prefs.js:109
 msgid "Position & Size"
@@ -175,138 +215,178 @@ msgstr "Theo thứ tự khởi chạy"
 msgid "Name"
 msgstr "Theo tên"
 
-#: prefs.js:163
+#: prefs.js:161
+msgid "macOS Special Launchers"
+msgstr "Mục đặc biệt kiểu macOS"
+
+#: prefs.js:162
+msgid "Shown at the end of the dock, after the apps."
+msgstr "Hiện ở cuối dock, sau các ứng dụng."
+
+#: prefs.js:164
+msgid "Its icon tells whether it holds anything; right-click to empty it"
+msgstr "Biểu tượng cho biết thùng rác có gì không; nhấp chuột phải để dọn sạch"
+
+#: prefs.js:164
+msgid "Show Trash"
+msgstr "Hiện Thùng rác"
+
+#: prefs.js:166
+msgid "Right-click for the files changed last"
+msgstr "Nhấp chuột phải để xem các tệp thay đổi gần đây nhất"
+
+#: prefs.js:166
+msgid "Show Downloads Folder"
+msgstr "Hiện thư mục Tải về"
+
+#: prefs.js:168
+msgid "Click the folder to fan out its latest files instead of opening it"
+msgstr "Nhấp vào thư mục để xoè các tệp mới nhất ra thay vì mở thư mục"
+
+#: prefs.js:168
+msgid "Stacks Fan View"
+msgstr "Stack dạng cánh quạt"
+
+#: prefs.js:170
+msgid "Draw a line between the apps and these items"
+msgstr "Vẽ một vạch giữa các ứng dụng và những mục này"
+
+#: prefs.js:170
+msgid "Separate special items with divider"
+msgstr "Ngăn cách các mục đặc biệt bằng vạch"
+
+#: prefs.js:174
 msgid "Behavior"
 msgstr "Hành vi"
 
-#: prefs.js:165
+#: prefs.js:176
 msgid "Auto-hide"
 msgstr "Tự động ẩn"
 
-#: prefs.js:167
+#: prefs.js:178
 msgid "Hide the dock while a window overlaps it; windows may then use the whole screen"
 msgstr "Ẩn dock khi có cửa sổ đè lên; cửa sổ khi đó được dùng toàn bộ màn hình"
 
-#: prefs.js:167
+#: prefs.js:178
 msgid "Intellihide"
 msgstr "Ẩn thông minh"
 
-#: prefs.js:170
+#: prefs.js:181
 msgid "Hide delay"
 msgstr "Độ trễ khi ẩn"
 
-#: prefs.js:170
+#: prefs.js:181
 msgid "Milliseconds before the dock hides after the pointer leaves"
 msgstr "Số mili giây trước khi dock ẩn sau khi con trỏ rời đi"
 
-#: prefs.js:172
+#: prefs.js:183
 msgid "Milliseconds the pointer must rest on the screen edge"
 msgstr "Số mili giây con trỏ phải dừng ở cạnh màn hình"
 
-#: prefs.js:172
+#: prefs.js:183
 msgid "Show delay"
 msgstr "Độ trễ khi hiện"
 
-#: prefs.js:174
+#: prefs.js:185
 msgid "Mouse Actions"
 msgstr "Tương tác chuột"
 
-#: prefs.js:176
+#: prefs.js:187
 msgid "Click on the focused app"
 msgstr "Nhấp vào ứng dụng đang dùng"
 
-#: prefs.js:176
+#: prefs.js:187
 msgid "What clicking its icon again does"
 msgstr "Hành động khi nhấp lại vào icon của nó"
 
-#: prefs.js:177
+#: prefs.js:188
 msgid "Cycle through windows"
 msgstr "Chuyển lần lượt qua các cửa sổ"
 
-#: prefs.js:178
+#: prefs.js:189
 msgid "Minimize"
 msgstr "Thu nhỏ"
 
-#: prefs.js:179
+#: prefs.js:190
 msgid "Minimize, or cycle if several windows"
 msgstr "Thu nhỏ, hoặc chuyển lần lượt nếu có nhiều cửa sổ"
 
-#: prefs.js:180
+#: prefs.js:191
 msgid "Do nothing"
 msgstr "Không làm gì"
 
-#: prefs.js:183
+#: prefs.js:194
 msgid "Scroll to switch windows"
 msgstr "Cuộn để chuyển cửa sổ"
 
-#: prefs.js:183
+#: prefs.js:194
 msgid "Scrolling over an app icon steps through its windows"
 msgstr "Cuộn chuột trên icon để chuyển qua các cửa sổ của ứng dụng đó"
 
-#: prefs.js:187
+#: prefs.js:198
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: prefs.js:189
+#: prefs.js:200
 msgid "Magnification"
 msgstr "Hiệu ứng phóng to"
 
-#: prefs.js:191
+#: prefs.js:202
 msgid "Icons near the pointer grow"
 msgstr "Icon gần con trỏ sẽ lớn lên"
 
-#: prefs.js:191
+#: prefs.js:202
 msgid "Magnify on hover"
 msgstr "Phóng to khi rê chuột"
 
-#: prefs.js:193
+#: prefs.js:204
 msgid "Maximum scale"
 msgstr "Tỉ lệ phóng tối đa"
 
-#: prefs.js:193
+#: prefs.js:204
 msgid "Size of the icon under the pointer, relative to its size at rest"
 msgstr "Kích thước icon dưới con trỏ so với lúc nghỉ"
 
-#: prefs.js:195
+#: prefs.js:206
 msgid "Background & Blur"
 msgstr "Nền & Làm mờ"
 
-#: prefs.js:197
+#: prefs.js:208
 msgid "0 is fully transparent, 1 is opaque"
 msgstr "0 là trong suốt hoàn toàn, 1 là đặc"
 
-#: prefs.js:197
+#: prefs.js:208
 msgid "Background opacity"
 msgstr "Độ đậm của nền"
 
-#: prefs.js:199
+#: prefs.js:210
 msgid "Corner radius"
 msgstr "Độ bo góc"
 
-#: prefs.js:199
+#: prefs.js:210
 msgid "Roundness of the dock, in pixels"
 msgstr "Độ tròn góc của dock, tính bằng pixel"
 
-#: prefs.js:201
+#: prefs.js:212
 msgid "Blur background"
 msgstr "Làm mờ nền"
 
-#: prefs.js:201
+#: prefs.js:212
 msgid "Show the wallpaper blurred behind the dock"
 msgstr "Hiện hình nền được làm mờ phía sau dock"
 
-#: prefs.js:204
+#: prefs.js:215
 msgid "Blur strength"
 msgstr "Cường độ mờ"
 
-#: prefs.js:204
+#: prefs.js:215
 msgid "Higher is blurrier"
 msgstr "Càng cao càng mờ"
 
-#: prefs.js:206
+#: prefs.js:217
 msgid "0 is black, 1 leaves the wallpaper unchanged"
 msgstr "0 là đen, 1 giữ nguyên hình nền"
 
-#: prefs.js:206
+#: prefs.js:217
 msgid "Blur brightness"
 msgstr "Độ sáng lớp mờ"

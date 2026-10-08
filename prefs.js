@@ -157,6 +157,17 @@ export default class GlideDockPreferences extends ExtensionPreferences {
                 ['launch', _('Order they were started')],
                 ['name', _('Name')],
             ]);
+
+        const places = rows.group(_('macOS Special Launchers'),
+            _('Shown at the end of the dock, after the apps.'));
+        rows.switch(places, 'show-trash',
+            _('Show Trash'), _('Its icon tells whether it holds anything; right-click to empty it'));
+        const downloads = rows.switch(places, 'show-downloads',
+            _('Show Downloads Folder'), _('Right-click for the files changed last'));
+        rows.dependOn(downloads, rows.switch(places, 'stacks-fan-view',
+            _('Stacks Fan View'), _('Click the folder to fan out its latest files instead of opening it')));
+        rows.switch(places, 'show-places-separator',
+            _('Separate special items with divider'), _('Draw a line between the apps and these items'));
     }
 
     _addBehaviorPage(rows) {
