@@ -5,5 +5,5 @@
   "shell-version": ["45", "46", "47", "48", "49", "50"],
   "settings-schema": "org.gnome.shell.extensions.glidedock",
   "gettext-domain": "glidedock",
-  "url": "https://github.com/bquangthien25/glidedock"
+  "url": "https://github.com/bquangthien25-hub/GlideDock"
 }

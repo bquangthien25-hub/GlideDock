@@ -28,10 +28,18 @@
     box-shadow: none;
 }
 
+/* Also used for the Show Apps icon of the shell's own dash. Shell themes
+   like to hide that icon and paint an image over it; neither may stick. */
 .glidedock-show-apps,
+.glidedock-show-apps:hover,
+.glidedock-show-apps:active,
 .glidedock-button:hover .glidedock-show-apps,
-.glidedock-button:active .glidedock-show-apps {
-    color: #ffffff;
+.glidedock-button:active .glidedock-show-apps,
+.show-apps .glidedock-show-apps,
+.show-apps:hover .glidedock-show-apps,
+.show-apps:checked .glidedock-show-apps {
+    color: #ffffff !important;
+    background-image: none;
 }
 
 .glidedock-dot {
