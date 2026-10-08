@@ -1,0 +1,73 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+
+/* Invisible wrapper: touches the screen edge (for the strut) and floats the dock off it. */
+.glidedock-container.bottom { padding-bottom: 8px; }
+.glidedock-container.left { padding-left: 8px; }
+.glidedock-container.right { padding-right: 8px; }
+
+.glidedock {
+    /* Fallbacks only: colour alpha, radius and padding are overridden from the settings. */
+    background-color: rgba(22, 22, 26, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    padding: 8px 10px 4px 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Buttons are bare hit areas in every state, whatever the shell theme does
+   to buttons in general. */
+.glidedock-button,
+.glidedock-button:hover,
+.glidedock-button:focus,
+.glidedock-button:active,
+.glidedock-button:checked {
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.glidedock-show-apps,
+.glidedock-button:hover .glidedock-show-apps,
+.glidedock-button:active .glidedock-show-apps {
+    color: #ffffff;
+}
+
+.glidedock-dot {
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 99px;
+}
+
+.glidedock-dot.focused {
+    background-color: #ffffff;
+}
+
+.glidedock-separator {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.glidedock.bottom .glidedock-separator {
+    width: 1px;
+    margin: 4px 7px 12px 7px;
+}
+
+.glidedock.left .glidedock-separator {
+    height: 1px;
+    margin: 7px 4px 7px 12px;
+}
+
+.glidedock.right .glidedock-separator {
+    height: 1px;
+    margin: 7px 12px 7px 4px;
+}
+
+.glidedock-label {
+    background-color: rgba(18, 18, 22, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 8px;
+    padding: 5px 11px;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: 500;
+}

@@ -1,0 +1,312 @@
+# Vietnamese translation for GlideDock.
+# Copyright (C) 2026 GlideDock contributors
+# This file is distributed under the same license as the GlideDock package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GlideDock\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-08 23:45+0700\n"
+"PO-Revision-Date: 2026-10-08 23:15+0700\n"
+"Last-Translator: GlideDock contributors\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/dock.js:455
+msgid "Show Apps"
+msgstr "Hiện ứng dụng"
+
+#: prefs.js:109
+msgid "Position & Size"
+msgstr "Vị trí & Kích thước"
+
+#: prefs.js:111
+msgid "Screen & Position"
+msgstr "Màn hình & Vị trí"
+
+#: prefs.js:113
+msgid "Position on screen"
+msgstr "Vị trí trên màn hình"
+
+#: prefs.js:113
+msgid "Screen edge the dock is attached to"
+msgstr "Cạnh màn hình mà dock bám vào"
+
+#: prefs.js:114
+msgid "Bottom"
+msgstr "Dưới đáy"
+
+#: prefs.js:115
+msgid "Left"
+msgstr "Trái"
+
+#: prefs.js:116
+msgid "Right"
+msgstr "Phải"
+
+#: prefs.js:119
+msgid "Alignment"
+msgstr "Căn lề"
+
+#: prefs.js:119
+msgid "Where the dock sits along that edge"
+msgstr "Vị trí của dock dọc theo cạnh đó"
+
+#: prefs.js:120
+msgid "Center"
+msgstr "Giữa"
+
+#: prefs.js:121
+msgid "Start"
+msgstr "Bắt đầu"
+
+#: prefs.js:122
+msgid "End"
+msgstr "Kết thúc"
+
+#: prefs.js:126
+msgid "Keep the dock in the overview in place of the built-in dash"
+msgstr "Giữ dock trong Overview thay cho Dash có sẵn"
+
+#: prefs.js:126
+msgid "Show in the overview"
+msgstr "Hiện trong Overview"
+
+#: prefs.js:128
+msgid "Icon Size"
+msgstr "Kích thước icon"
+
+#: prefs.js:130
+msgid "Icon size"
+msgstr "Kích thước icon"
+
+#: prefs.js:130
+msgid "Size at rest, in pixels"
+msgstr "Kích thước lúc nghỉ, tính bằng pixel"
+
+#: prefs.js:132
+msgid "Extra space between icons, in pixels"
+msgstr "Khoảng trống thêm giữa các icon, tính bằng pixel"
+
+#: prefs.js:132
+msgid "Icon spacing"
+msgstr "Khoảng cách icon"
+
+#: prefs.js:134
+msgid "Dock padding"
+msgstr "Lề trong của dock"
+
+#: prefs.js:134
+msgid "Space between the icons and the border of the dock, in pixels"
+msgstr "Khoảng cách giữa icon và viền dock, tính bằng pixel"
+
+#: prefs.js:138
+msgid "Launchers"
+msgstr "Ứng dụng"
+
+#: prefs.js:140
+msgid "Show Apps Button"
+msgstr "Nút Hiện ứng dụng"
+
+#: prefs.js:142
+msgid "Add a button that opens the app grid"
+msgstr "Thêm nút mở kho ứng dụng"
+
+#: prefs.js:142
+msgid "Show Apps button"
+msgstr "Nút Hiện ứng dụng"
+
+#: prefs.js:144
+msgid "Button position"
+msgstr "Vị trí nút"
+
+#: prefs.js:144
+msgid "Where the button sits among the icons"
+msgstr "Vị trí của nút so với các icon"
+
+#: prefs.js:145
+msgid "At the start"
+msgstr "Ở đầu danh sách"
+
+#: prefs.js:146
+msgid "At the end"
+msgstr "Ở cuối danh sách"
+
+#: prefs.js:149
+msgid "Running Apps"
+msgstr "Ứng dụng đang chạy"
+
+#: prefs.js:150
+msgid "Apps that are running but not pinned are listed after the pinned ones."
+msgstr "Ứng dụng đang chạy nhưng chưa ghim được xếp sau các ứng dụng đã ghim."
+
+#: prefs.js:152
+msgid "Draw a line between pinned apps and other running apps"
+msgstr "Vẽ một vạch giữa ứng dụng đã ghim và các ứng dụng đang chạy khác"
+
+#: prefs.js:152
+msgid "Separator"
+msgstr "Vạch ngăn cách"
+
+#: prefs.js:154
+msgid "Mark running apps with a dot"
+msgstr "Đánh dấu ứng dụng đang chạy bằng một chấm"
+
+#: prefs.js:154
+msgid "Running indicators"
+msgstr "Chỉ báo đang chạy"
+
+#: prefs.js:156
+msgid "Either way, icons never change places on their own"
+msgstr "Dù chọn cách nào, icon cũng không tự đổi chỗ"
+
+#: prefs.js:156
+msgid "Order of running apps"
+msgstr "Thứ tự ứng dụng đang chạy"
+
+#: prefs.js:157
+msgid "Order they were started"
+msgstr "Theo thứ tự khởi chạy"
+
+#: prefs.js:158
+msgid "Name"
+msgstr "Theo tên"
+
+#: prefs.js:163
+msgid "Behavior"
+msgstr "Hành vi"
+
+#: prefs.js:165
+msgid "Auto-hide"
+msgstr "Tự động ẩn"
+
+#: prefs.js:167
+msgid "Hide the dock while a window overlaps it; windows may then use the whole screen"
+msgstr "Ẩn dock khi có cửa sổ đè lên; cửa sổ khi đó được dùng toàn bộ màn hình"
+
+#: prefs.js:167
+msgid "Intellihide"
+msgstr "Ẩn thông minh"
+
+#: prefs.js:170
+msgid "Hide delay"
+msgstr "Độ trễ khi ẩn"
+
+#: prefs.js:170
+msgid "Milliseconds before the dock hides after the pointer leaves"
+msgstr "Số mili giây trước khi dock ẩn sau khi con trỏ rời đi"
+
+#: prefs.js:172
+msgid "Milliseconds the pointer must rest on the screen edge"
+msgstr "Số mili giây con trỏ phải dừng ở cạnh màn hình"
+
+#: prefs.js:172
+msgid "Show delay"
+msgstr "Độ trễ khi hiện"
+
+#: prefs.js:174
+msgid "Mouse Actions"
+msgstr "Tương tác chuột"
+
+#: prefs.js:176
+msgid "Click on the focused app"
+msgstr "Nhấp vào ứng dụng đang dùng"
+
+#: prefs.js:176
+msgid "What clicking its icon again does"
+msgstr "Hành động khi nhấp lại vào icon của nó"
+
+#: prefs.js:177
+msgid "Cycle through windows"
+msgstr "Chuyển lần lượt qua các cửa sổ"
+
+#: prefs.js:178
+msgid "Minimize"
+msgstr "Thu nhỏ"
+
+#: prefs.js:179
+msgid "Minimize, or cycle if several windows"
+msgstr "Thu nhỏ, hoặc chuyển lần lượt nếu có nhiều cửa sổ"
+
+#: prefs.js:180
+msgid "Do nothing"
+msgstr "Không làm gì"
+
+#: prefs.js:183
+msgid "Scroll to switch windows"
+msgstr "Cuộn để chuyển cửa sổ"
+
+#: prefs.js:183
+msgid "Scrolling over an app icon steps through its windows"
+msgstr "Cuộn chuột trên icon để chuyển qua các cửa sổ của ứng dụng đó"
+
+#: prefs.js:187
+msgid "Appearance"
+msgstr "Giao diện"
+
+#: prefs.js:189
+msgid "Magnification"
+msgstr "Hiệu ứng phóng to"
+
+#: prefs.js:191
+msgid "Icons near the pointer grow"
+msgstr "Icon gần con trỏ sẽ lớn lên"
+
+#: prefs.js:191
+msgid "Magnify on hover"
+msgstr "Phóng to khi rê chuột"
+
+#: prefs.js:193
+msgid "Maximum scale"
+msgstr "Tỉ lệ phóng tối đa"
+
+#: prefs.js:193
+msgid "Size of the icon under the pointer, relative to its size at rest"
+msgstr "Kích thước icon dưới con trỏ so với lúc nghỉ"
+
+#: prefs.js:195
+msgid "Background & Blur"
+msgstr "Nền & Làm mờ"
+
+#: prefs.js:197
+msgid "0 is fully transparent, 1 is opaque"
+msgstr "0 là trong suốt hoàn toàn, 1 là đặc"
+
+#: prefs.js:197
+msgid "Background opacity"
+msgstr "Độ đậm của nền"
+
+#: prefs.js:199
+msgid "Corner radius"
+msgstr "Độ bo góc"
+
+#: prefs.js:199
+msgid "Roundness of the dock, in pixels"
+msgstr "Độ tròn góc của dock, tính bằng pixel"
+
+#: prefs.js:201
+msgid "Blur background"
+msgstr "Làm mờ nền"
+
+#: prefs.js:201
+msgid "Show the wallpaper blurred behind the dock"
+msgstr "Hiện hình nền được làm mờ phía sau dock"
+
+#: prefs.js:204
+msgid "Blur strength"
+msgstr "Cường độ mờ"
+
+#: prefs.js:204
+msgid "Higher is blurrier"
+msgstr "Càng cao càng mờ"
+
+#: prefs.js:206
+msgid "0 is black, 1 leaves the wallpaper unchanged"
+msgstr "0 là đen, 1 giữ nguyên hình nền"
+
+#: prefs.js:206
+msgid "Blur brightness"
+msgstr "Độ sáng lớp mờ"

@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR GlideDock contributors
+# This file is distributed under the same license as the GlideDock package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GlideDock\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-08 23:45+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/dock.js:455
+msgid "Show Apps"
+msgstr ""
+
+#: prefs.js:109
+msgid "Position & Size"
+msgstr ""
+
+#: prefs.js:111
+msgid "Screen & Position"
+msgstr ""
+
+#: prefs.js:113
+msgid "Position on screen"
+msgstr ""
+
+#: prefs.js:113
+msgid "Screen edge the dock is attached to"
+msgstr ""
+
+#: prefs.js:114
+msgid "Bottom"
+msgstr ""
+
+#: prefs.js:115
+msgid "Left"
+msgstr ""
+
+#: prefs.js:116
+msgid "Right"
+msgstr ""
+
+#: prefs.js:119
+msgid "Alignment"
+msgstr ""
+
+#: prefs.js:119
+msgid "Where the dock sits along that edge"
+msgstr ""
+
+#: prefs.js:120
+msgid "Center"
+msgstr ""
+
+#: prefs.js:121
+msgid "Start"
+msgstr ""
+
+#: prefs.js:122
+msgid "End"
+msgstr ""
+
+#: prefs.js:126
+msgid "Keep the dock in the overview in place of the built-in dash"
+msgstr ""
+
+#: prefs.js:126
+msgid "Show in the overview"
+msgstr ""
+
+#: prefs.js:128
+msgid "Icon Size"
+msgstr ""
+
+#: prefs.js:130
+msgid "Icon size"
+msgstr ""
+
+#: prefs.js:130
+msgid "Size at rest, in pixels"
+msgstr ""
+
+#: prefs.js:132
+msgid "Extra space between icons, in pixels"
+msgstr ""
+
+#: prefs.js:132
+msgid "Icon spacing"
+msgstr ""
+
+#: prefs.js:134
+msgid "Dock padding"
+msgstr ""
+
+#: prefs.js:134
+msgid "Space between the icons and the border of the dock, in pixels"
+msgstr ""
+
+#: prefs.js:138
+msgid "Launchers"
+msgstr ""
+
+#: prefs.js:140
+msgid "Show Apps Button"
+msgstr ""
+
+#: prefs.js:142
+msgid "Add a button that opens the app grid"
+msgstr ""
+
+#: prefs.js:142
+msgid "Show Apps button"
+msgstr ""
+
+#: prefs.js:144
+msgid "Button position"
+msgstr ""
+
+#: prefs.js:144
+msgid "Where the button sits among the icons"
+msgstr ""
+
+#: prefs.js:145
+msgid "At the start"
+msgstr ""
+
+#: prefs.js:146
+msgid "At the end"
+msgstr ""
+
+#: prefs.js:149
+msgid "Running Apps"
+msgstr ""
+
+#: prefs.js:150
+msgid "Apps that are running but not pinned are listed after the pinned ones."
+msgstr ""
+
+#: prefs.js:152
+msgid "Draw a line between pinned apps and other running apps"
+msgstr ""
+
+#: prefs.js:152
+msgid "Separator"
+msgstr ""
+
+#: prefs.js:154
+msgid "Mark running apps with a dot"
+msgstr ""
+
+#: prefs.js:154
+msgid "Running indicators"
+msgstr ""
+
+#: prefs.js:156
+msgid "Either way, icons never change places on their own"
+msgstr ""
+
+#: prefs.js:156
+msgid "Order of running apps"
+msgstr ""
+
+#: prefs.js:157
+msgid "Order they were started"
+msgstr ""
+
+#: prefs.js:158
+msgid "Name"
+msgstr ""
+
+#: prefs.js:163
+msgid "Behavior"
+msgstr ""
+
+#: prefs.js:165
+msgid "Auto-hide"
+msgstr ""
+
+#: prefs.js:167
+msgid "Hide the dock while a window overlaps it; windows may then use the whole screen"
+msgstr ""
+
+#: prefs.js:167
+msgid "Intellihide"
+msgstr ""
+
+#: prefs.js:170
+msgid "Hide delay"
+msgstr ""
+
+#: prefs.js:170
+msgid "Milliseconds before the dock hides after the pointer leaves"
+msgstr ""
+
+#: prefs.js:172
+msgid "Milliseconds the pointer must rest on the screen edge"
+msgstr ""
+
+#: prefs.js:172
+msgid "Show delay"
+msgstr ""
+
+#: prefs.js:174
+msgid "Mouse Actions"
+msgstr ""
+
+#: prefs.js:176
+msgid "Click on the focused app"
+msgstr ""
+
+#: prefs.js:176
+msgid "What clicking its icon again does"
+msgstr ""
+
+#: prefs.js:177
+msgid "Cycle through windows"
+msgstr ""
+
+#: prefs.js:178
+msgid "Minimize"
+msgstr ""
+
+#: prefs.js:179
+msgid "Minimize, or cycle if several windows"
+msgstr ""
+
+#: prefs.js:180
+msgid "Do nothing"
+msgstr ""
+
+#: prefs.js:183
+msgid "Scroll to switch windows"
+msgstr ""
+
+#: prefs.js:183
+msgid "Scrolling over an app icon steps through its windows"
+msgstr ""
+
+#: prefs.js:187
+msgid "Appearance"
+msgstr ""
+
+#: prefs.js:189
+msgid "Magnification"
+msgstr ""
+
+#: prefs.js:191
+msgid "Icons near the pointer grow"
+msgstr ""
+
+#: prefs.js:191
+msgid "Magnify on hover"
+msgstr ""
+
+#: prefs.js:193
+msgid "Maximum scale"
+msgstr ""
+
+#: prefs.js:193
+msgid "Size of the icon under the pointer, relative to its size at rest"
+msgstr ""
+
+#: prefs.js:195
+msgid "Background & Blur"
+msgstr ""
+
+#: prefs.js:197
+msgid "0 is fully transparent, 1 is opaque"
+msgstr ""
+
+#: prefs.js:197
+msgid "Background opacity"
+msgstr ""
+
+#: prefs.js:199
+msgid "Corner radius"
+msgstr ""
+
+#: prefs.js:199
+msgid "Roundness of the dock, in pixels"
+msgstr ""
+
+#: prefs.js:201
+msgid "Blur background"
+msgstr ""
+
+#: prefs.js:201
+msgid "Show the wallpaper blurred behind the dock"
+msgstr ""
+
+#: prefs.js:204
+msgid "Blur strength"
+msgstr ""
+
+#: prefs.js:204
+msgid "Higher is blurrier"
+msgstr ""
+
+#: prefs.js:206
+msgid "0 is black, 1 leaves the wallpaper unchanged"
+msgstr ""
+
+#: prefs.js:206
+msgid "Blur brightness"
+msgstr ""

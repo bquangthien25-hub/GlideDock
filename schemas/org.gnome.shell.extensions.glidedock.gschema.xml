@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.glidedock" path="/org/gnome/shell/extensions/glidedock/">
+    <key name="position" type="s">
+      <choices>
+        <choice value="bottom"/>
+        <choice value="left"/>
+        <choice value="right"/>
+      </choices>
+      <default>'bottom'</default>
+      <summary>Dock position</summary>
+      <description>Screen edge of the primary monitor the dock is attached to.</description>
+    </key>
+    <key name="alignment" type="s">
+      <choices>
+        <choice value="start"/>
+        <choice value="center"/>
+        <choice value="end"/>
+      </choices>
+      <default>'center'</default>
+      <summary>Dock alignment</summary>
+      <description>Where the dock sits along its screen edge. Start is left for a bottom dock and top for a side dock.</description>
+    </key>
+    <key name="show-apps-button" type="b">
+      <default>true</default>
+      <summary>Show the Show Apps button</summary>
+      <description>Whether the dock has a button that opens the app grid.</description>
+    </key>
+    <key name="show-apps-at-start" type="b">
+      <default>false</default>
+      <summary>Show Apps button at the start</summary>
+      <description>Place the Show Apps button before the app icons instead of after them.</description>
+    </key>
+    <key name="icon-size" type="i">
+      <range min="24" max="96"/>
+      <default>48</default>
+      <summary>Icon size</summary>
+      <description>Size of the icons at rest, in pixels.</description>
+    </key>
+    <key name="enable-magnification" type="b">
+      <default>true</default>
+      <summary>Magnify icons on hover</summary>
+      <description>Whether icons near the pointer grow.</description>
+    </key>
+    <key name="max-scale" type="d">
+      <range min="1.0" max="2.0"/>
+      <default>1.35</default>
+      <summary>Maximum magnification</summary>
+      <description>How much the icon under the pointer grows, as a multiple of the icon size.</description>
+    </key>
+    <key name="dock-opacity" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.85</default>
+      <summary>Dock background opacity</summary>
+      <description>Opacity of the dock background, from 0 (transparent) to 1 (opaque). Icons are not affected.</description>
+    </key>
+    <key name="icon-spacing" type="i">
+      <range min="2" max="16"/>
+      <default>2</default>
+      <summary>Icon spacing</summary>
+      <description>Extra space between icons, in pixels.</description>
+    </key>
+    <key name="corner-radius" type="i">
+      <range min="0" max="40"/>
+      <default>16</default>
+      <summary>Corner radius</summary>
+      <description>Radius of the dock's corners, in pixels.</description>
+    </key>
+    <key name="enable-blur" type="b">
+      <default>false</default>
+      <summary>Blur the dock background</summary>
+      <description>Show a blurred copy of the wallpaper behind the dock.</description>
+    </key>
+    <key name="blur-sigma" type="i">
+      <range min="1" max="100"/>
+      <default>30</default>
+      <summary>Blur strength</summary>
+      <description>Standard deviation of the blur, in pixels.</description>
+    </key>
+    <key name="blur-brightness" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.6</default>
+      <summary>Blur brightness</summary>
+      <description>Brightness of the blurred wallpaper, from 0 (black) to 1 (unchanged).</description>
+    </key>
+    <key name="intellihide" type="b">
+      <default>false</default>
+      <summary>Hide when a window overlaps</summary>
+      <description>Slide the dock off screen while a window overlaps it, and stop reserving screen space for it.</description>
+    </key>
+    <key name="hide-delay" type="i">
+      <range min="0" max="2000"/>
+      <default>300</default>
+      <summary>Hide delay</summary>
+      <description>Time before an overlapped dock hides after the pointer leaves it, in milliseconds.</description>
+    </key>
+    <key name="show-delay" type="i">
+      <range min="0" max="2000"/>
+      <default>100</default>
+      <summary>Show delay</summary>
+      <description>Time the pointer must rest on the screen edge before a hidden dock appears, in milliseconds.</description>
+    </key>
+    <key name="click-action" type="s">
+      <choices>
+        <choice value="cycle"/>
+        <choice value="minimize"/>
+        <choice value="minimize-or-cycle"/>
+        <choice value="none"/>
+      </choices>
+      <default>'cycle'</default>
+      <summary>Click action for the focused app</summary>
+      <description>What clicking the icon of the focused app does: cycle through its windows, minimize them, minimize a single window and cycle through several, or nothing.</description>
+    </key>
+    <key name="scroll-to-switch" type="b">
+      <default>true</default>
+      <summary>Scroll to switch windows</summary>
+      <description>Whether scrolling over an app icon switches between that app's windows.</description>
+    </key>
+    <key name="dock-padding" type="i">
+      <range min="0" max="24"/>
+      <default>8</default>
+      <summary>Dock padding</summary>
+      <description>Space between the icons and the border of the dock, in pixels.</description>
+    </key>
+    <key name="show-separator" type="b">
+      <default>true</default>
+      <summary>Show the separator</summary>
+      <description>Whether a line separates pinned apps from other running apps.</description>
+    </key>
+    <key name="show-running-dots" type="b">
+      <default>true</default>
+      <summary>Show running indicators</summary>
+      <description>Whether a dot marks the apps that are running.</description>
+    </key>
+    <key name="running-apps-order" type="s">
+      <choices>
+        <choice value="launch"/>
+        <choice value="name"/>
+      </choices>
+      <default>'launch'</default>
+      <summary>Order of running apps</summary>
+      <description>How running apps that are not pinned are ordered: by the order they were started, or by name. Either way the order never changes on its own.</description>
+    </key>
+    <key name="show-in-overview" type="b">
+      <default>true</default>
+      <summary>Replace the dash in the overview</summary>
+      <description>Keep the dock on screen in the overview and hide the shell's own dash, so that the same bar is shown everywhere.</description>
+    </key>
+  </schema>
+</schemalist>

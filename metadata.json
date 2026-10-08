@@ -1,0 +1,9 @@
+{
+  "uuid": "glidedock@bquangthien25.github.io",
+  "name": "GlideDock",
+  "description": "A featherweight dock with smooth magnification and a jitter-free app label.",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "settings-schema": "org.gnome.shell.extensions.glidedock",
+  "gettext-domain": "glidedock",
+  "url": "https://github.com/bquangthien25/glidedock"
+}

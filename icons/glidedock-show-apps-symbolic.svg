@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g fill="#2e3436">
+    <circle cx="3.5" cy="3.5" r="1.4"/>
+    <circle cx="8" cy="3.5" r="1.4"/>
+    <circle cx="12.5" cy="3.5" r="1.4"/>
+    <circle cx="3.5" cy="8" r="1.4"/>
+    <circle cx="8" cy="8" r="1.4"/>
+    <circle cx="12.5" cy="8" r="1.4"/>
+    <circle cx="3.5" cy="12.5" r="1.4"/>
+    <circle cx="8" cy="12.5" r="1.4"/>
+    <circle cx="12.5" cy="12.5" r="1.4"/>
+  </g>
+</svg>
