@@ -5,13 +5,21 @@
 .glidedock-container.left { padding-left: 8px; }
 .glidedock-container.right { padding-right: 8px; }
 
-.glidedock {
-    /* Fallbacks only: colour alpha, radius and padding are overridden from the settings. */
+/* The bar itself. It is a layer of its own behind the icons, so that it can
+   be stretched when magnified icons need more room. */
+.glidedock-background {
+    /* Fallbacks only: colour alpha and radius are overridden from the settings. */
     background-color: rgba(22, 22, 26, 0.85);
     border: 1px solid rgba(255, 255, 255, 0.10);
     border-radius: 16px;
-    padding: 8px 10px 4px 10px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* The row of icons. Its border is the room the bar's border takes. */
+.glidedock {
+    /* Fallback only: the padding is overridden from the settings. */
+    border: 1px solid transparent;
+    padding: 8px 10px 4px 10px;
 }
 
 /* Buttons are bare hit areas in every state, whatever the shell theme does
