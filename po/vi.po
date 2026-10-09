@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlideDock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-09 00:24+0700\n"
+"POT-Creation-Date: 2026-10-09 16:03+0700\n"
 "PO-Revision-Date: 2026-10-08 23:15+0700\n"
 "Last-Translator: GlideDock contributors\n"
 "Language-Team: Vietnamese\n"
@@ -15,47 +15,51 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: lib/dock.js:506
+#: lib/dock.js:549
 msgid "Downloads"
 msgstr "Tải về"
 
-#: lib/dock.js:515
+#: lib/dock.js:558
 msgid "Trash"
 msgstr "Thùng rác"
 
-#: lib/dock.js:525
+#: lib/dock.js:568
 msgid "Show Apps"
 msgstr "Hiện ứng dụng"
 
-#: lib/dock.js:788
+#: lib/dock.js:786
+msgid "Open"
+msgstr "Mở"
+
+#: lib/dock.js:878
 msgid "No files"
 msgstr "Không có tệp nào"
 
-#: lib/dock.js:790
+#: lib/dock.js:880
 msgid "Open Downloads"
 msgstr "Mở thư mục Tải về"
 
-#: lib/dock.js:821
+#: lib/dock.js:911
 msgid "Open in Files"
 msgstr "Mở trong Tệp"
 
-#: lib/dock.js:853
+#: lib/dock.js:943
 msgid "Open Trash"
 msgstr "Mở Thùng rác"
 
-#: lib/dock.js:856 lib/dock.js:879
+#: lib/dock.js:946 lib/dock.js:969
 msgid "Empty Trash"
 msgstr "Dọn sạch thùng rác"
 
-#: lib/dock.js:869
+#: lib/dock.js:959
 msgid "Empty all items from Trash?"
 msgstr "Dọn sạch mọi thứ trong Thùng rác?"
 
-#: lib/dock.js:870
+#: lib/dock.js:960
 msgid "All items in the Trash will be permanently deleted."
 msgstr "Mọi thứ trong Thùng rác sẽ bị xoá vĩnh viễn."
 
-#: lib/dock.js:873
+#: lib/dock.js:963
 msgid "Cancel"
 msgstr "Huỷ"
 
