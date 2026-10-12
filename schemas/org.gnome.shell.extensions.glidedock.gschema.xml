@@ -107,7 +107,7 @@
         <choice value="minimize-or-cycle"/>
         <choice value="none"/>
       </choices>
-      <default>'cycle'</default>
+      <default>'minimize-or-cycle'</default>
       <summary>Click action for the focused app</summary>
       <description>What clicking the icon of the focused app does: cycle through its windows, minimize them, minimize a single window and cycle through several, or nothing.</description>
     </key>
