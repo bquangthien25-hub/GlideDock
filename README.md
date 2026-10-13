@@ -2,7 +2,7 @@
 
 A small, smooth dock for GNOME Shell with magnifying icons and pinned, running, Trash and Downloads items.
 
-![GNOME Shell 45–50](https://img.shields.io/badge/GNOME%20Shell-45%E2%80%9350-4a86cf)
+![GNOME Shell 45–51](https://img.shields.io/badge/GNOME%20Shell-45%E2%80%9351-4a86cf)
 ![License: GPL-2.0-or-later](https://img.shields.io/badge/license-GPL--2.0--or--later-blue)
 
 ![The dock with a magnified icon and its label](docs/magnification.png)
@@ -21,7 +21,7 @@ A small, smooth dock for GNOME Shell with magnifying icons and pinned, running, 
 
 ## Requirements
 
-- GNOME Shell 45, 46, 47, 48, 49 or 50
+- GNOME Shell 45, 46, 47, 48, 49, 50 or 51 (on 51 the blur background has square corners)
 - To build: `gnome-extensions`, `glib-compile-schemas`, `gjs`, `msgfmt`, `zip`, `unzip`, `python3`
 
 ```bash
