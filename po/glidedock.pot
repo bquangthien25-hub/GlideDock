@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlideDock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-30 11:05+0700\n"
+"POT-Creation-Date: 2026-10-30 14:57+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "All items in the Trash will be permanently deleted."
 msgstr ""
 
-#: lib/dock.js:998 lib/installer.js:167
+#: lib/dock.js:998 lib/installer.js:213
 msgid "Cancel"
 msgstr ""
 
@@ -83,164 +83,211 @@ msgstr ""
 msgid "Waiting to install %s…"
 msgstr ""
 
-#: lib/installer.js:32
+#: lib/installer.js:33
 #, javascript-format
 msgid "AppImages are moved to %s and added to the dock."
 msgstr ""
 
-#: lib/installer.js:38
-msgid "Flatpak apps are installed for your user and added to the dock. Downloading may take a while."
+#: lib/installer.js:40
+msgid ""
+"Flatpak apps are installed for your user and added to the dock. Downloading "
+"may take a while."
 msgstr ""
 
-#: lib/installer.js:44
-msgid "RPM packages are installed for the whole system with dnf, which asks for your password."
+#: lib/installer.js:45 lib/installer.js:395
+msgid ""
+"RPM packages are not supported on this system. Use Flatpak or AppImage "
+"instead."
 msgstr ""
 
-#: lib/installer.js:143
-#, javascript-format
-msgid "Replace “%s”?"
+#: lib/installer.js:49
+msgid ""
+"RPM packages are installed for the whole system with dnf, which asks for "
+"your password."
 msgstr ""
 
-#: lib/installer.js:144
-#, javascript-format
-msgid "%s is already installed. It will be replaced by %s."
-msgstr ""
-
-#: lib/installer.js:147
-#, javascript-format
-msgid "Install “%s”?"
-msgstr ""
-
-#: lib/installer.js:150
-msgid "Install these apps?"
-msgstr ""
-
-#: lib/installer.js:153
-#, javascript-format
-msgid "%s (replaces the installed %s)"
-msgstr ""
-
-#: lib/installer.js:159
-msgid "Only install apps from sources you trust."
-msgstr ""
-
-#: lib/installer.js:172
-msgid "Install"
-msgstr ""
-
-#: lib/installer.js:172
-msgid "Replace"
-msgstr ""
-
-#: lib/installer.js:211
-msgid "It has no launcher, so it cannot be added to the dock."
-msgstr ""
-
-#: lib/installer.js:213 lib/installer.js:215
-msgid "It has been added to the dock."
-msgstr ""
-
-#: lib/installer.js:215
-msgid "It will show up in the app grid."
-msgstr ""
-
-#: lib/installer.js:216
-#, javascript-format
-msgid "%s is installed"
-msgstr ""
-
-#: lib/installer.js:216
-#, javascript-format
-msgid "%s is updated"
-msgstr ""
-
-#: lib/installer.js:222
-#, javascript-format
-msgid "Installation of %s was cancelled"
-msgstr ""
-
-#: lib/installer.js:226
+#: lib/installer.js:108 lib/installer.js:278
 #, javascript-format
 msgid "Could not install %s"
 msgstr ""
 
-#: lib/installer.js:292
+#: lib/installer.js:159 lib/installer.js:187 lib/installer.js:191
+#, javascript-format
+msgid "Replace “%s”?"
+msgstr ""
+
+#: lib/installer.js:160
+#, javascript-format
+msgid "%s is already installed. It will be replaced by %s."
+msgstr ""
+
+#: lib/installer.js:163
+#, javascript-format
+msgid "Install “%s”?"
+msgstr ""
+
+#: lib/installer.js:166
+msgid "Install these apps?"
+msgstr ""
+
+#: lib/installer.js:169
+#, javascript-format
+msgid "%s (replaces the installed %s)"
+msgstr ""
+
+#: lib/installer.js:177
+msgid "Only install apps from sources you trust."
+msgstr ""
+
+#: lib/installer.js:178 lib/installer.js:199
+msgid "Replace"
+msgstr ""
+
+#: lib/installer.js:178
+msgid "Install"
+msgstr ""
+
+#: lib/installer.js:192
+#, javascript-format
+msgid ""
+"%s comes with the same launcher as %s, which is already installed from %s. "
+"If you go on, the launcher and dock icon of %s will open %s instead."
+msgstr ""
+
+#: lib/installer.js:263
+msgid "It has no launcher, so it cannot be added to the dock."
+msgstr ""
+
+#: lib/installer.js:265 lib/installer.js:267
+msgid "It has been added to the dock."
+msgstr ""
+
+#: lib/installer.js:267
+msgid "It will show up in the app grid."
+msgstr ""
+
+#: lib/installer.js:268
+#, javascript-format
+msgid "%s is updated"
+msgstr ""
+
+#: lib/installer.js:268
+#, javascript-format
+msgid "%s is installed"
+msgstr ""
+
+#: lib/installer.js:274
+#, javascript-format
+msgid "Installation of %s was cancelled"
+msgstr ""
+
+#: lib/installer.js:350
+#, javascript-format
+msgid ""
+"%s is already in %s, but was not installed by GlideDock. If you go on, it is "
+"moved to the Trash."
+msgstr ""
+
+#: lib/installer.js:353
+#, javascript-format
+msgid "Warning: %s is not signed, so there is no way to tell who made it."
+msgstr ""
+
+#: lib/installer.js:355
+#, javascript-format
+msgid "Warning: %s is signed with a key this system does not trust."
+msgstr ""
+
+#: lib/installer.js:357
+#, javascript-format
+msgid ""
+"Warning: the signature of %s does not match its contents. It may have been "
+"tampered with."
+msgstr ""
+
+#: lib/installer.js:359
+#, javascript-format
+msgid ""
+"Flatpak permissions are not shown. Review permissions after install with: %s"
+msgstr ""
+
+#: lib/installer.js:375
 msgid "The file could not be found."
 msgstr ""
 
-#: lib/installer.js:294
+#: lib/installer.js:377
 msgid "This file is not an AppImage."
 msgstr ""
 
-#: lib/installer.js:296
+#: lib/installer.js:379
 #, javascript-format
 msgid "Flatpak is not installed. Install it with “%s”, then try again."
 msgstr ""
 
-#: lib/installer.js:299
+#: lib/installer.js:382
 #, javascript-format
-msgid "A runtime it needs was not found. Add Flathub for your user with “%s”, then try again."
+msgid ""
+"A runtime it needs was not found. Add Flathub for your user with “%s”, then "
+"try again."
 msgstr ""
 
-#: lib/installer.js:302
+#: lib/installer.js:385
 msgid "Its repository could not be reached, or does not have this app."
 msgstr ""
 
-#: lib/installer.js:304
+#: lib/installer.js:387
 msgid "The download failed. Check the internet connection, then try again."
 msgstr ""
 
-#: lib/installer.js:306
+#: lib/installer.js:389
 msgid "This is not a valid Flatpak file."
 msgstr ""
 
-#: lib/installer.js:308
+#: lib/installer.js:391
 msgid "This file installs a runtime, not an app."
 msgstr ""
 
-#: lib/installer.js:310
+#: lib/installer.js:393
 msgid "There is not enough disk space."
 msgstr ""
 
-#: lib/installer.js:312
-msgid "dnf is not available, so RPM packages cannot be installed on this system."
-msgstr ""
-
-#: lib/installer.js:314
+#: lib/installer.js:397
 #, javascript-format
 msgid "pkexec is not available. Install it with “%s”, then try again."
 msgstr ""
 
-#: lib/installer.js:317
+#: lib/installer.js:400
 msgid "Your account is not allowed to install software."
 msgstr ""
 
-#: lib/installer.js:319
+#: lib/installer.js:402
 msgid "Some packages it depends on could not be found."
 msgstr ""
 
-#: lib/installer.js:321
+#: lib/installer.js:404
 #, javascript-format
-msgid "Its signature is not trusted. If you trust where it comes from, install it in a terminal with “%s”."
+msgid ""
+"Its signature is not trusted. If you trust where it comes from, install it "
+"in a terminal with “%s”."
 msgstr ""
 
-#: lib/installer.js:324
+#: lib/installer.js:407
 msgid "It is made for a different kind of computer."
 msgstr ""
 
-#: lib/installer.js:326
+#: lib/installer.js:409
 msgid "A newer version is installed already."
 msgstr ""
 
-#: lib/installer.js:328
+#: lib/installer.js:411
 msgid "Another installation is running. Try again once it has finished."
 msgstr ""
 
-#: lib/installer.js:330
+#: lib/installer.js:413
 msgid "This is not a valid RPM package."
 msgstr ""
 
-#: lib/installer.js:332
+#: lib/installer.js:415
 msgid "This is a source package: the code to build an app, not the app itself."
 msgstr ""
 
@@ -293,11 +340,11 @@ msgid "End"
 msgstr ""
 
 #: prefs.js:126
-msgid "Keep the dock in the overview in place of the built-in dash"
+msgid "Show in the overview"
 msgstr ""
 
 #: prefs.js:126
-msgid "Show in the overview"
+msgid "Keep the dock in the overview in place of the built-in dash"
 msgstr ""
 
 #: prefs.js:128
@@ -313,11 +360,11 @@ msgid "Size at rest, in pixels"
 msgstr ""
 
 #: prefs.js:132
-msgid "Extra space between icons, in pixels"
+msgid "Icon spacing"
 msgstr ""
 
 #: prefs.js:132
-msgid "Icon spacing"
+msgid "Extra space between icons, in pixels"
 msgstr ""
 
 #: prefs.js:134
@@ -337,11 +384,11 @@ msgid "Show Apps Button"
 msgstr ""
 
 #: prefs.js:142
-msgid "Add a button that opens the app grid"
+msgid "Show Apps button"
 msgstr ""
 
 #: prefs.js:142
-msgid "Show Apps button"
+msgid "Add a button that opens the app grid"
 msgstr ""
 
 #: prefs.js:144
@@ -369,27 +416,27 @@ msgid "Apps that are running but not pinned are listed after the pinned ones."
 msgstr ""
 
 #: prefs.js:152
-msgid "Draw a line between pinned apps and other running apps"
-msgstr ""
-
-#: prefs.js:152
 msgid "Separator"
 msgstr ""
 
-#: prefs.js:154
-msgid "Mark running apps with a dot"
+#: prefs.js:152
+msgid "Draw a line between pinned apps and other running apps"
 msgstr ""
 
 #: prefs.js:154
 msgid "Running indicators"
 msgstr ""
 
-#: prefs.js:156
-msgid "Either way, icons never change places on their own"
+#: prefs.js:154
+msgid "Mark running apps with a dot"
 msgstr ""
 
 #: prefs.js:156
 msgid "Order of running apps"
+msgstr ""
+
+#: prefs.js:156
+msgid "Either way, icons never change places on their own"
 msgstr ""
 
 #: prefs.js:157
@@ -409,35 +456,35 @@ msgid "Shown at the end of the dock, after the apps."
 msgstr ""
 
 #: prefs.js:164
-msgid "Its icon tells whether it holds anything; right-click to empty it"
-msgstr ""
-
-#: prefs.js:164
 msgid "Show Trash"
 msgstr ""
 
-#: prefs.js:166
-msgid "Right-click for the files changed last"
+#: prefs.js:164
+msgid "Its icon tells whether it holds anything; right-click to empty it"
 msgstr ""
 
 #: prefs.js:166
 msgid "Show Downloads Folder"
 msgstr ""
 
-#: prefs.js:168
-msgid "Click the folder to fan out its latest files instead of opening it"
+#: prefs.js:166
+msgid "Right-click for the files changed last"
 msgstr ""
 
 #: prefs.js:168
 msgid "Stacks Fan View"
 msgstr ""
 
-#: prefs.js:170
-msgid "Draw a line between the apps and these items"
+#: prefs.js:168
+msgid "Click the folder to fan out its latest files instead of opening it"
 msgstr ""
 
 #: prefs.js:170
 msgid "Separate special items with divider"
+msgstr ""
+
+#: prefs.js:170
+msgid "Draw a line between the apps and these items"
 msgstr ""
 
 #: prefs.js:174
@@ -449,11 +496,13 @@ msgid "Auto-hide"
 msgstr ""
 
 #: prefs.js:178
-msgid "Hide the dock while a window overlaps it; windows may then use the whole screen"
+msgid "Intellihide"
 msgstr ""
 
 #: prefs.js:178
-msgid "Intellihide"
+msgid ""
+"Hide the dock while a window overlaps it; windows may then use the whole "
+"screen"
 msgstr ""
 
 #: prefs.js:181
@@ -465,11 +514,11 @@ msgid "Milliseconds before the dock hides after the pointer leaves"
 msgstr ""
 
 #: prefs.js:183
-msgid "Milliseconds the pointer must rest on the screen edge"
+msgid "Show delay"
 msgstr ""
 
 #: prefs.js:183
-msgid "Show delay"
+msgid "Milliseconds the pointer must rest on the screen edge"
 msgstr ""
 
 #: prefs.js:185
@@ -513,7 +562,9 @@ msgid "Drag-and-Drop Install"
 msgstr ""
 
 #: prefs.js:198
-msgid "Drag an AppImage, Flatpak or RPM file onto the dock to install it and pin it there"
+msgid ""
+"Drag an AppImage, Flatpak or RPM file onto the dock to install it and pin it "
+"there"
 msgstr ""
 
 #: prefs.js:202
@@ -525,11 +576,11 @@ msgid "Magnification"
 msgstr ""
 
 #: prefs.js:206
-msgid "Icons near the pointer grow"
+msgid "Magnify on hover"
 msgstr ""
 
 #: prefs.js:206
-msgid "Magnify on hover"
+msgid "Icons near the pointer grow"
 msgstr ""
 
 #: prefs.js:208
@@ -545,11 +596,11 @@ msgid "Background & Blur"
 msgstr ""
 
 #: prefs.js:212
-msgid "0 is fully transparent, 1 is opaque"
+msgid "Background opacity"
 msgstr ""
 
 #: prefs.js:212
-msgid "Background opacity"
+msgid "0 is fully transparent, 1 is opaque"
 msgstr ""
 
 #: prefs.js:214
@@ -577,9 +628,9 @@ msgid "Higher is blurrier"
 msgstr ""
 
 #: prefs.js:221
-msgid "0 is black, 1 leaves the wallpaper unchanged"
+msgid "Blur brightness"
 msgstr ""
 
 #: prefs.js:221
-msgid "Blur brightness"
+msgid "0 is black, 1 leaves the wallpaper unchanged"
 msgstr ""

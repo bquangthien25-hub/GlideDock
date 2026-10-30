@@ -36,14 +36,15 @@ Drag-to-install is **off by default**. Turn it on in the extension settings: Pre
 | File | How it is installed | Root |
 |---|---|---|
 | `.AppImage` | Made executable (`chmod +x`), moved to `~/Applications`, and given a `.desktop` launcher with its own name and icon, created automatically | No |
-| `.flatpakref`, `.flatpak` | `flatpak install --user -y` | No |
-| `.rpm` | `pkexec dnf install -y`; GNOME shows a password prompt. dnf checks the package signature: if it is unsigned or its key is not trusted, dnf stops and GlideDock shows the command to install it anyway | Yes |
+| `.flatpakref`, `.flatpak` | `flatpak install --user -y`. The app's permissions are not shown before installing; check them afterwards with `flatpak info --show-permissions <app-id>` | No |
+| `.rpm` | `pkexec dnf install -y`; GNOME shows a password prompt. dnf does not check the signature of a package file, so GlideDock checks it first with `rpm --checksig` and warns in the confirm dialog if the package is unsigned, signed with a key your system does not trust, or does not match its signature | Yes |
 
 Tested on: GNOME 47–51 (Fedora 44)
 
 Good to know:
 
 - **Updates:** dropping an app that is already installed replaces it. GlideDock asks before it does. An older AppImage of the same app goes to the Trash.
+- **Nothing is replaced without asking:** GlideDock asks first if `~/Applications` already has a file of the same name that it did not install (that file then goes to the Trash), or if an AppImage carries the same launcher as another installed AppImage, which would take over that app's dock icon.
 - **One at a time:** if you drop more files while an app is installing, they wait their turn.
 - **Errors** show up as a notification that says what went wrong, such as a missing Flatpak runtime, a missing RPM dependency, or a package signature that is not trusted. Where there is a fix, the notification gives the command to run.
 
@@ -70,7 +71,7 @@ On Wayland, GNOME Shell cannot receive files dropped by other apps; only a windo
 ## Requirements
 
 - GNOME Shell 45, 46, 47, 48, 49, 50 or 51 (on 51 the blur background has square corners)
-- For drag-and-drop install: `gjs` with GTK 4 (installed with GNOME), plus `flatpak` for Flatpak files, and `dnf` and `pkexec` for RPM files (Fedora and other dnf-based systems)
+- For drag-and-drop install: `gjs` with GTK 4 (installed with GNOME), plus `flatpak` for Flatpak files, and `dnf` and `pkexec` for RPM files (Fedora and other dnf-based systems). On systems without `dnf` (apt, pacman), dropping an RPM shows that it is not supported
 - To build: `gnome-extensions`, `glib-compile-schemas`, `gjs`, `msgfmt`, `zip`, `unzip`, `python3`
 
 ```bash
