@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlideDock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-09 16:03+0700\n"
+"POT-Creation-Date: 2026-10-30 11:05+0700\n"
 "PO-Revision-Date: 2026-10-08 23:15+0700\n"
 "Last-Translator: GlideDock contributors\n"
 "Language-Team: Vietnamese\n"
@@ -15,53 +15,232 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: lib/dock.js:549
+#: lib/dock.js:581
 msgid "Downloads"
 msgstr "Tải về"
 
-#: lib/dock.js:558
+#: lib/dock.js:590
 msgid "Trash"
 msgstr "Thùng rác"
 
-#: lib/dock.js:568
+#: lib/dock.js:600
 msgid "Show Apps"
 msgstr "Hiện ứng dụng"
 
-#: lib/dock.js:786
+#: lib/dock.js:818
 msgid "Open"
 msgstr "Mở"
 
-#: lib/dock.js:878
+#: lib/dock.js:910
 msgid "No files"
 msgstr "Không có tệp nào"
 
-#: lib/dock.js:880
+#: lib/dock.js:912
 msgid "Open Downloads"
 msgstr "Mở thư mục Tải về"
 
-#: lib/dock.js:911
+#: lib/dock.js:946
 msgid "Open in Files"
 msgstr "Mở trong Tệp"
 
-#: lib/dock.js:943
+#: lib/dock.js:978
 msgid "Open Trash"
 msgstr "Mở Thùng rác"
 
-#: lib/dock.js:946 lib/dock.js:969
+#: lib/dock.js:981 lib/dock.js:1004
 msgid "Empty Trash"
 msgstr "Dọn sạch thùng rác"
 
-#: lib/dock.js:959
+#: lib/dock.js:994
 msgid "Empty all items from Trash?"
 msgstr "Dọn sạch mọi thứ trong Thùng rác?"
 
-#: lib/dock.js:960
+#: lib/dock.js:995
 msgid "All items in the Trash will be permanently deleted."
 msgstr "Mọi thứ trong Thùng rác sẽ bị xoá vĩnh viễn."
 
-#: lib/dock.js:963
+#: lib/dock.js:998 lib/installer.js:167
 msgid "Cancel"
 msgstr "Huỷ"
+
+#: lib/dock.js:1100 prefs.js:198
+msgid "Drop to install"
+msgstr "Thả để cài đặt"
+
+#: lib/dock.js:1100
+msgid "This file cannot be installed"
+msgstr "Không thể cài đặt tệp này"
+
+#: lib/dock.js:1157
+#, javascript-format
+msgid "Installing %s…"
+msgstr "Đang cài %s…"
+
+#: lib/dock.js:1157
+#, javascript-format
+msgid "Waiting to install %s…"
+msgstr "Đang chờ cài %s…"
+
+#: lib/installer.js:32
+#, javascript-format
+msgid "AppImages are moved to %s and added to the dock."
+msgstr "AppImage sẽ được chuyển vào %s và thêm lên dock."
+
+#: lib/installer.js:38
+msgid "Flatpak apps are installed for your user and added to the dock. Downloading may take a while."
+msgstr "Ứng dụng Flatpak sẽ được cài cho tài khoản của bạn và thêm lên dock. Việc tải về có thể mất một lúc."
+
+#: lib/installer.js:44
+msgid "RPM packages are installed for the whole system with dnf, which asks for your password."
+msgstr "Gói RPM sẽ được cài cho toàn hệ thống bằng dnf; bạn sẽ được hỏi mật khẩu."
+
+#: lib/installer.js:143
+#, javascript-format
+msgid "Replace “%s”?"
+msgstr "Thay thế “%s”?"
+
+#: lib/installer.js:144
+#, javascript-format
+msgid "%s is already installed. It will be replaced by %s."
+msgstr "%s đã được cài. Bản này sẽ được thay bằng %s."
+
+#: lib/installer.js:147
+#, javascript-format
+msgid "Install “%s”?"
+msgstr "Cài đặt “%s”?"
+
+#: lib/installer.js:150
+msgid "Install these apps?"
+msgstr "Cài đặt các ứng dụng này?"
+
+#: lib/installer.js:153
+#, javascript-format
+msgid "%s (replaces the installed %s)"
+msgstr "%s (thay cho %s đã cài)"
+
+#: lib/installer.js:159
+msgid "Only install apps from sources you trust."
+msgstr "Chỉ cài ứng dụng từ nguồn bạn tin tưởng."
+
+#: lib/installer.js:172
+msgid "Install"
+msgstr "Cài đặt"
+
+#: lib/installer.js:172
+msgid "Replace"
+msgstr "Thay thế"
+
+#: lib/installer.js:211
+msgid "It has no launcher, so it cannot be added to the dock."
+msgstr "Ứng dụng không có biểu tượng khởi chạy nên không thể thêm lên dock."
+
+#: lib/installer.js:213 lib/installer.js:215
+msgid "It has been added to the dock."
+msgstr "Ứng dụng đã được thêm lên dock."
+
+#: lib/installer.js:215
+msgid "It will show up in the app grid."
+msgstr "Ứng dụng sẽ xuất hiện trong lưới ứng dụng."
+
+#: lib/installer.js:216
+#, javascript-format
+msgid "%s is installed"
+msgstr "Đã cài %s"
+
+#: lib/installer.js:216
+#, javascript-format
+msgid "%s is updated"
+msgstr "Đã cập nhật %s"
+
+#: lib/installer.js:222
+#, javascript-format
+msgid "Installation of %s was cancelled"
+msgstr "Đã huỷ cài đặt %s"
+
+#: lib/installer.js:226
+#, javascript-format
+msgid "Could not install %s"
+msgstr "Không thể cài %s"
+
+#: lib/installer.js:292
+msgid "The file could not be found."
+msgstr "Không tìm thấy tệp."
+
+#: lib/installer.js:294
+msgid "This file is not an AppImage."
+msgstr "Tệp này không phải là AppImage."
+
+#: lib/installer.js:296
+#, javascript-format
+msgid "Flatpak is not installed. Install it with “%s”, then try again."
+msgstr "Flatpak chưa được cài. Hãy cài bằng “%s” rồi thử lại."
+
+#: lib/installer.js:299
+#, javascript-format
+msgid "A runtime it needs was not found. Add Flathub for your user with “%s”, then try again."
+msgstr "Không tìm thấy runtime mà ứng dụng cần. Hãy thêm Flathub cho tài khoản của bạn bằng “%s” rồi thử lại."
+
+#: lib/installer.js:302
+msgid "Its repository could not be reached, or does not have this app."
+msgstr "Không kết nối được kho chứa ứng dụng, hoặc kho không có ứng dụng này."
+
+#: lib/installer.js:304
+msgid "The download failed. Check the internet connection, then try again."
+msgstr "Tải về thất bại. Hãy kiểm tra kết nối mạng rồi thử lại."
+
+#: lib/installer.js:306
+msgid "This is not a valid Flatpak file."
+msgstr "Đây không phải là tệp Flatpak hợp lệ."
+
+#: lib/installer.js:308
+msgid "This file installs a runtime, not an app."
+msgstr "Tệp này cài một runtime, không phải ứng dụng."
+
+#: lib/installer.js:310
+msgid "There is not enough disk space."
+msgstr "Không đủ dung lượng ổ đĩa."
+
+#: lib/installer.js:312
+msgid "dnf is not available, so RPM packages cannot be installed on this system."
+msgstr "Không có dnf nên không thể cài gói RPM trên hệ thống này."
+
+#: lib/installer.js:314
+#, javascript-format
+msgid "pkexec is not available. Install it with “%s”, then try again."
+msgstr "Không có pkexec. Hãy cài bằng “%s” rồi thử lại."
+
+#: lib/installer.js:317
+msgid "Your account is not allowed to install software."
+msgstr "Tài khoản của bạn không được phép cài phần mềm."
+
+#: lib/installer.js:319
+msgid "Some packages it depends on could not be found."
+msgstr "Không tìm thấy một số gói phụ thuộc mà gói này cần."
+
+#: lib/installer.js:321
+#, javascript-format
+msgid "Its signature is not trusted. If you trust where it comes from, install it in a terminal with “%s”."
+msgstr "Chữ ký của gói không được tin cậy. Nếu bạn tin nguồn của gói, hãy cài trong terminal bằng “%s”."
+
+#: lib/installer.js:324
+msgid "It is made for a different kind of computer."
+msgstr "Gói này dành cho loại máy tính khác."
+
+#: lib/installer.js:326
+msgid "A newer version is installed already."
+msgstr "Máy đã có phiên bản mới hơn."
+
+#: lib/installer.js:328
+msgid "Another installation is running. Try again once it has finished."
+msgstr "Đang có một tiến trình cài đặt khác. Hãy thử lại khi nó xong."
+
+#: lib/installer.js:330
+msgid "This is not a valid RPM package."
+msgstr "Đây không phải là gói RPM hợp lệ."
+
+#: lib/installer.js:332
+msgid "This is a source package: the code to build an app, not the app itself."
+msgstr "Đây là gói mã nguồn, dùng để build ứng dụng, không phải bản ứng dụng để cài."
 
 #: prefs.js:109
 msgid "Position & Size"
@@ -327,70 +506,78 @@ msgstr "Cuộn để chuyển cửa sổ"
 msgid "Scrolling over an app icon steps through its windows"
 msgstr "Cuộn chuột trên icon để chuyển qua các cửa sổ của ứng dụng đó"
 
+#: prefs.js:196
+msgid "Drag-and-Drop Install"
+msgstr "Kéo thả để cài đặt"
+
 #: prefs.js:198
+msgid "Drag an AppImage, Flatpak or RPM file onto the dock to install it and pin it there"
+msgstr "Kéo một tệp AppImage, Flatpak hoặc RPM vào dock để cài đặt và ghim nó lên dock"
+
+#: prefs.js:202
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: prefs.js:200
+#: prefs.js:204
 msgid "Magnification"
 msgstr "Hiệu ứng phóng to"
 
-#: prefs.js:202
+#: prefs.js:206
 msgid "Icons near the pointer grow"
 msgstr "Icon gần con trỏ sẽ lớn lên"
 
-#: prefs.js:202
+#: prefs.js:206
 msgid "Magnify on hover"
 msgstr "Phóng to khi rê chuột"
 
-#: prefs.js:204
+#: prefs.js:208
 msgid "Maximum scale"
 msgstr "Tỉ lệ phóng tối đa"
 
-#: prefs.js:204
+#: prefs.js:208
 msgid "Size of the icon under the pointer, relative to its size at rest"
 msgstr "Kích thước icon dưới con trỏ so với lúc nghỉ"
 
-#: prefs.js:206
+#: prefs.js:210
 msgid "Background & Blur"
 msgstr "Nền & Làm mờ"
 
-#: prefs.js:208
+#: prefs.js:212
 msgid "0 is fully transparent, 1 is opaque"
 msgstr "0 là trong suốt hoàn toàn, 1 là đặc"
 
-#: prefs.js:208
+#: prefs.js:212
 msgid "Background opacity"
 msgstr "Độ đậm của nền"
 
-#: prefs.js:210
+#: prefs.js:214
 msgid "Corner radius"
 msgstr "Độ bo góc"
 
-#: prefs.js:210
+#: prefs.js:214
 msgid "Roundness of the dock, in pixels"
 msgstr "Độ tròn góc của dock, tính bằng pixel"
 
-#: prefs.js:212
+#: prefs.js:216
 msgid "Blur background"
 msgstr "Làm mờ nền"
 
-#: prefs.js:212
+#: prefs.js:216
 msgid "Show the wallpaper blurred behind the dock"
 msgstr "Hiện hình nền được làm mờ phía sau dock"
 
-#: prefs.js:215
+#: prefs.js:219
 msgid "Blur strength"
 msgstr "Cường độ mờ"
 
-#: prefs.js:215
+#: prefs.js:219
 msgid "Higher is blurrier"
 msgstr "Càng cao càng mờ"
 
-#: prefs.js:217
+#: prefs.js:221
 msgid "0 is black, 1 leaves the wallpaper unchanged"
 msgstr "0 là đen, 1 giữ nguyên hình nền"
 
-#: prefs.js:217
+#: prefs.js:221
 msgid "Blur brightness"
 msgstr "Độ sáng lớp mờ"

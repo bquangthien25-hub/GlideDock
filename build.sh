@@ -12,7 +12,10 @@ for tool in gnome-extensions glib-compile-schemas gjs msgfmt zip unzip python3; 
     command -v "$tool" > /dev/null || fail "'$tool' is not installed"
 done
 
-sources=(extension.js prefs.js lib/*.js)
+sources=(extension.js prefs.js lib/*.js helper/*.js)
+# The only files allowed to start other programs: the drag-and-drop installer
+# runs AppImages and its drop window helper through these alone.
+process_sources=(lib/subprocess.js)
 
 # --- Metadata -----------------------------------------------------------------
 
@@ -46,7 +49,14 @@ violations=0
 for rule in "${rules[@]}"; do
     pattern=${rule%%$'\t'*}
     reason=${rule#*$'\t'}
-    if matches=$(grep -nE "$pattern" "${sources[@]}"); then
+    checked=("${sources[@]}")
+    if [ "$reason" = "running external commands" ]; then
+        checked=()
+        for file in "${sources[@]}"; do
+            [[ " ${process_sources[*]} " == *" $file "* ]] || checked+=("$file")
+        done
+    fi
+    if matches=$(grep -nE "$pattern" "${checked[@]}"); then
         echo "lint: $reason:" >&2
         echo "$matches" | sed 's/^/  /' >&2
         violations=1
@@ -77,7 +87,7 @@ glib-compile-schemas --strict schemas/
 zip_path="$uuid.zip"
 rm -f "$zip_path"
 gnome-extensions pack --force --out-dir . --podir=po \
-    --extra-source=lib --extra-source=icons --extra-source=LICENSE .
+    --extra-source=lib --extra-source=helper --extra-source=icons --extra-source=LICENSE .
 mv -f "$uuid.shell-extension.zip" "$zip_path"
 
 # GNOME 44+ compiles schemas at install time, so the compiled copy is dead

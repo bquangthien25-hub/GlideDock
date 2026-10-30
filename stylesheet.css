@@ -93,6 +93,22 @@
     background-color: rgba(78, 78, 88, 0.95);
 }
 
+/* Files dragged over the dock: they can be dropped, or they cannot. */
+.glidedock-background.drop-target {
+    border-color: rgba(120, 170, 255, 0.90);
+    box-shadow: 0 0 18px rgba(80, 140, 255, 0.55);
+}
+
+.glidedock-background.drop-reject {
+    border-color: rgba(255, 120, 120, 0.85);
+    box-shadow: 0 0 18px rgba(255, 80, 80, 0.40);
+}
+
+/* Drawn over the placeholder of an app being installed. */
+.glidedock-install-spinner {
+    color: #ffffff;
+}
+
 .glidedock-dot {
     background-color: rgba(255, 255, 255, 0.50);
     border-radius: 99px;

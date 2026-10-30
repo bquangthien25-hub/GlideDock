@@ -166,5 +166,10 @@
       <summary>Fan out the downloads folder</summary>
       <description>Whether clicking the downloads folder fans its latest files out of the icon instead of opening the folder.</description>
     </key>
+    <key name="drop-to-install" type="b">
+      <default>true</default>
+      <summary>Drop to install</summary>
+      <description>Install apps from AppImage, .flatpakref, .flatpak and .rpm files dragged onto the dock, after asking, and pin them to it.</description>
+    </key>
   </schema>
 </schemalist>
