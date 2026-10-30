@@ -195,7 +195,7 @@ export default class GlideDockPreferences extends ExtensionPreferences {
 
         const install = rows.group(_('Drag-and-Drop Install'));
         rows.switch(install, 'drop-to-install',
-            _('Drop to install'), _('Drag an AppImage, Flatpak or RPM file onto the dock to install it and pin it there'));
+            _('Drop to install'), _('Drag an AppImage, Flatpak, RPM or DEB file onto the dock to install it and pin it there'));
     }
 
     _addAppearancePage(rows) {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlideDock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-30 14:57+0700\n"
+"POT-Creation-Date: 2026-10-30 15:19+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "All items in the Trash will be permanently deleted."
 msgstr ""
 
-#: lib/dock.js:998 lib/installer.js:213
+#: lib/dock.js:998 lib/installer.js:223
 msgid "Cancel"
 msgstr ""
 
@@ -83,211 +83,240 @@ msgstr ""
 msgid "Waiting to install %s…"
 msgstr ""
 
-#: lib/installer.js:33
+#: lib/installer.js:34
 #, javascript-format
 msgid "AppImages are moved to %s and added to the dock."
 msgstr ""
 
-#: lib/installer.js:40
+#: lib/installer.js:41
 msgid ""
 "Flatpak apps are installed for your user and added to the dock. Downloading "
 "may take a while."
 msgstr ""
 
-#: lib/installer.js:45 lib/installer.js:395
+#: lib/installer.js:46 lib/installer.js:411
 msgid ""
 "RPM packages are not supported on this system. Use Flatpak or AppImage "
 "instead."
 msgstr ""
 
-#: lib/installer.js:49
+#: lib/installer.js:50
 msgid ""
 "RPM packages are installed for the whole system with dnf, which asks for "
 "your password."
 msgstr ""
 
-#: lib/installer.js:108 lib/installer.js:278
+#: lib/installer.js:55 lib/installer.js:416
+msgid "DEB packages are not supported on this system."
+msgstr ""
+
+#: lib/installer.js:59
+msgid ""
+"DEB packages are installed for the whole system with apt, which asks for "
+"your password."
+msgstr ""
+
+#: lib/installer.js:118 lib/installer.js:288
 #, javascript-format
 msgid "Could not install %s"
 msgstr ""
 
-#: lib/installer.js:159 lib/installer.js:187 lib/installer.js:191
+#: lib/installer.js:169 lib/installer.js:197 lib/installer.js:201
 #, javascript-format
 msgid "Replace “%s”?"
 msgstr ""
 
-#: lib/installer.js:160
+#: lib/installer.js:170
 #, javascript-format
 msgid "%s is already installed. It will be replaced by %s."
 msgstr ""
 
-#: lib/installer.js:163
+#: lib/installer.js:173
 #, javascript-format
 msgid "Install “%s”?"
 msgstr ""
 
-#: lib/installer.js:166
+#: lib/installer.js:176
 msgid "Install these apps?"
 msgstr ""
 
-#: lib/installer.js:169
+#: lib/installer.js:179
 #, javascript-format
 msgid "%s (replaces the installed %s)"
 msgstr ""
 
-#: lib/installer.js:177
+#: lib/installer.js:187
 msgid "Only install apps from sources you trust."
 msgstr ""
 
-#: lib/installer.js:178 lib/installer.js:199
+#: lib/installer.js:188 lib/installer.js:209
 msgid "Replace"
 msgstr ""
 
-#: lib/installer.js:178
+#: lib/installer.js:188
 msgid "Install"
 msgstr ""
 
-#: lib/installer.js:192
+#: lib/installer.js:202
 #, javascript-format
 msgid ""
 "%s comes with the same launcher as %s, which is already installed from %s. "
 "If you go on, the launcher and dock icon of %s will open %s instead."
 msgstr ""
 
-#: lib/installer.js:263
+#: lib/installer.js:273
 msgid "It has no launcher, so it cannot be added to the dock."
 msgstr ""
 
-#: lib/installer.js:265 lib/installer.js:267
+#: lib/installer.js:275 lib/installer.js:277
 msgid "It has been added to the dock."
 msgstr ""
 
-#: lib/installer.js:267
+#: lib/installer.js:277
 msgid "It will show up in the app grid."
 msgstr ""
 
-#: lib/installer.js:268
+#: lib/installer.js:278
 #, javascript-format
 msgid "%s is updated"
 msgstr ""
 
-#: lib/installer.js:268
+#: lib/installer.js:278
 #, javascript-format
 msgid "%s is installed"
 msgstr ""
 
-#: lib/installer.js:274
+#: lib/installer.js:284
 #, javascript-format
 msgid "Installation of %s was cancelled"
 msgstr ""
 
-#: lib/installer.js:350
+#: lib/installer.js:360
 #, javascript-format
 msgid ""
 "%s is already in %s, but was not installed by GlideDock. If you go on, it is "
 "moved to the Trash."
 msgstr ""
 
-#: lib/installer.js:353
+#: lib/installer.js:363
 #, javascript-format
 msgid "Warning: %s is not signed, so there is no way to tell who made it."
 msgstr ""
 
-#: lib/installer.js:355
+#: lib/installer.js:365
 #, javascript-format
 msgid "Warning: %s is signed with a key this system does not trust."
 msgstr ""
 
-#: lib/installer.js:357
+#: lib/installer.js:367
 #, javascript-format
 msgid ""
 "Warning: the signature of %s does not match its contents. It may have been "
 "tampered with."
 msgstr ""
 
-#: lib/installer.js:359
+#: lib/installer.js:370
+#, javascript-format
+msgid "Package %s: %s"
+msgstr ""
+
+#: lib/installer.js:371
+#, javascript-format
+msgid "Package %s"
+msgstr ""
+
+#: lib/installer.js:373
+#, javascript-format
+msgid "The signature of %s could not be verified: dpkg-sig is not installed."
+msgstr ""
+
+#: lib/installer.js:375
 #, javascript-format
 msgid ""
 "Flatpak permissions are not shown. Review permissions after install with: %s"
 msgstr ""
 
-#: lib/installer.js:375
+#: lib/installer.js:391
 msgid "The file could not be found."
 msgstr ""
 
-#: lib/installer.js:377
+#: lib/installer.js:393
 msgid "This file is not an AppImage."
 msgstr ""
 
-#: lib/installer.js:379
+#: lib/installer.js:395
 #, javascript-format
 msgid "Flatpak is not installed. Install it with “%s”, then try again."
 msgstr ""
 
-#: lib/installer.js:382
+#: lib/installer.js:398
 #, javascript-format
 msgid ""
 "A runtime it needs was not found. Add Flathub for your user with “%s”, then "
 "try again."
 msgstr ""
 
-#: lib/installer.js:385
+#: lib/installer.js:401
 msgid "Its repository could not be reached, or does not have this app."
 msgstr ""
 
-#: lib/installer.js:387
+#: lib/installer.js:403
 msgid "The download failed. Check the internet connection, then try again."
 msgstr ""
 
-#: lib/installer.js:389
+#: lib/installer.js:405
 msgid "This is not a valid Flatpak file."
 msgstr ""
 
-#: lib/installer.js:391
+#: lib/installer.js:407
 msgid "This file installs a runtime, not an app."
 msgstr ""
 
-#: lib/installer.js:393
+#: lib/installer.js:409
 msgid "There is not enough disk space."
 msgstr ""
 
-#: lib/installer.js:397
+#: lib/installer.js:413
 #, javascript-format
 msgid "pkexec is not available. Install it with “%s”, then try again."
 msgstr ""
 
-#: lib/installer.js:400
+#: lib/installer.js:418
+msgid "This is not a valid DEB package."
+msgstr ""
+
+#: lib/installer.js:420
 msgid "Your account is not allowed to install software."
 msgstr ""
 
-#: lib/installer.js:402
+#: lib/installer.js:422
 msgid "Some packages it depends on could not be found."
 msgstr ""
 
-#: lib/installer.js:404
+#: lib/installer.js:424
 #, javascript-format
 msgid ""
 "Its signature is not trusted. If you trust where it comes from, install it "
 "in a terminal with “%s”."
 msgstr ""
 
-#: lib/installer.js:407
+#: lib/installer.js:427
 msgid "It is made for a different kind of computer."
 msgstr ""
 
-#: lib/installer.js:409
+#: lib/installer.js:429
 msgid "A newer version is installed already."
 msgstr ""
 
-#: lib/installer.js:411
+#: lib/installer.js:431
 msgid "Another installation is running. Try again once it has finished."
 msgstr ""
 
-#: lib/installer.js:413
+#: lib/installer.js:433
 msgid "This is not a valid RPM package."
 msgstr ""
 
-#: lib/installer.js:415
+#: lib/installer.js:435
 msgid "This is a source package: the code to build an app, not the app itself."
 msgstr ""
 
@@ -563,8 +592,8 @@ msgstr ""
 
 #: prefs.js:198
 msgid ""
-"Drag an AppImage, Flatpak or RPM file onto the dock to install it and pin it "
-"there"
+"Drag an AppImage, Flatpak, RPM or DEB file onto the dock to install it and "
+"pin it there"
 msgstr ""
 
 #: prefs.js:202

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlideDock\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-30 14:57+0700\n"
+"POT-Creation-Date: 2026-10-30 15:19+0700\n"
 "PO-Revision-Date: 2026-10-08 23:15+0700\n"
 "Last-Translator: GlideDock contributors\n"
 "Language-Team: Vietnamese\n"
@@ -59,7 +59,7 @@ msgstr "Dọn sạch mọi thứ trong Thùng rác?"
 msgid "All items in the Trash will be permanently deleted."
 msgstr "Mọi thứ trong Thùng rác sẽ bị xoá vĩnh viễn."
 
-#: lib/dock.js:998 lib/installer.js:213
+#: lib/dock.js:998 lib/installer.js:223
 msgid "Cancel"
 msgstr "Huỷ"
 
@@ -81,12 +81,12 @@ msgstr "Đang cài %s…"
 msgid "Waiting to install %s…"
 msgstr "Đang chờ cài %s…"
 
-#: lib/installer.js:33
+#: lib/installer.js:34
 #, javascript-format
 msgid "AppImages are moved to %s and added to the dock."
 msgstr "AppImage sẽ được chuyển vào %s và thêm lên dock."
 
-#: lib/installer.js:40
+#: lib/installer.js:41
 msgid ""
 "Flatpak apps are installed for your user and added to the dock. Downloading "
 "may take a while."
@@ -94,61 +94,71 @@ msgstr ""
 "Ứng dụng Flatpak sẽ được cài cho tài khoản của bạn và thêm lên dock. Việc "
 "tải về có thể mất một lúc."
 
-#: lib/installer.js:45 lib/installer.js:395
+#: lib/installer.js:46 lib/installer.js:411
 msgid ""
 "RPM packages are not supported on this system. Use Flatpak or AppImage "
 "instead."
 msgstr "Hệ thống này không hỗ trợ gói RPM. Hãy dùng Flatpak hoặc AppImage."
 
-#: lib/installer.js:49
+#: lib/installer.js:50
 msgid ""
 "RPM packages are installed for the whole system with dnf, which asks for "
 "your password."
 msgstr ""
 "Gói RPM sẽ được cài cho toàn hệ thống bằng dnf; bạn sẽ được hỏi mật khẩu."
 
-#: lib/installer.js:108 lib/installer.js:278
+#: lib/installer.js:55 lib/installer.js:416
+msgid "DEB packages are not supported on this system."
+msgstr "Hệ thống này không hỗ trợ gói DEB."
+
+#: lib/installer.js:59
+msgid ""
+"DEB packages are installed for the whole system with apt, which asks for "
+"your password."
+msgstr "Gói DEB sẽ được cài cho toàn hệ thống bằng apt; bạn sẽ được hỏi mật khẩu."
+
+#: lib/installer.js:118 lib/installer.js:288
 #, javascript-format
 msgid "Could not install %s"
 msgstr "Không thể cài %s"
 
-#: lib/installer.js:159 lib/installer.js:187 lib/installer.js:191
+#: lib/installer.js:169 lib/installer.js:197 lib/installer.js:201
 #, javascript-format
 msgid "Replace “%s”?"
 msgstr "Thay thế “%s”?"
 
-#: lib/installer.js:160
+#: lib/installer.js:170
 #, javascript-format
 msgid "%s is already installed. It will be replaced by %s."
 msgstr "%s đã được cài. Bản này sẽ được thay bằng %s."
 
-#: lib/installer.js:163
+#: lib/installer.js:173
 #, javascript-format
 msgid "Install “%s”?"
 msgstr "Cài đặt “%s”?"
 
-#: lib/installer.js:166
+#: lib/installer.js:176
 msgid "Install these apps?"
 msgstr "Cài đặt các ứng dụng này?"
 
-#: lib/installer.js:169
+#: lib/installer.js:179
 #, javascript-format
 msgid "%s (replaces the installed %s)"
 msgstr "%s (thay cho %s đã cài)"
 
-#: lib/installer.js:177
+#: lib/installer.js:187
 msgid "Only install apps from sources you trust."
 msgstr "Chỉ cài ứng dụng từ nguồn bạn tin tưởng."
 
-#: lib/installer.js:178 lib/installer.js:199
+#: lib/installer.js:188 lib/installer.js:209
 msgid "Replace"
 msgstr "Thay thế"
 
-#: lib/installer.js:178
+#: lib/installer.js:188
 msgid "Install"
 msgstr "Cài đặt"
 
-#: lib/installer.js:192
+#: lib/installer.js:202
 #, javascript-format
 msgid ""
 "%s comes with the same launcher as %s, which is already installed from %s. "
@@ -157,34 +167,34 @@ msgstr ""
 "%s đi kèm trình khởi chạy trùng với %s, ứng dụng đã được cài từ %s. Nếu tiếp "
 "tục, trình khởi chạy và biểu tượng trên dock của %s sẽ mở %s thay thế."
 
-#: lib/installer.js:263
+#: lib/installer.js:273
 msgid "It has no launcher, so it cannot be added to the dock."
 msgstr "Ứng dụng không có biểu tượng khởi chạy nên không thể thêm lên dock."
 
-#: lib/installer.js:265 lib/installer.js:267
+#: lib/installer.js:275 lib/installer.js:277
 msgid "It has been added to the dock."
 msgstr "Ứng dụng đã được thêm lên dock."
 
-#: lib/installer.js:267
+#: lib/installer.js:277
 msgid "It will show up in the app grid."
 msgstr "Ứng dụng sẽ xuất hiện trong lưới ứng dụng."
 
-#: lib/installer.js:268
+#: lib/installer.js:278
 #, javascript-format
 msgid "%s is updated"
 msgstr "Đã cập nhật %s"
 
-#: lib/installer.js:268
+#: lib/installer.js:278
 #, javascript-format
 msgid "%s is installed"
 msgstr "Đã cài %s"
 
-#: lib/installer.js:274
+#: lib/installer.js:284
 #, javascript-format
 msgid "Installation of %s was cancelled"
 msgstr "Đã huỷ cài đặt %s"
 
-#: lib/installer.js:350
+#: lib/installer.js:360
 #, javascript-format
 msgid ""
 "%s is already in %s, but was not installed by GlideDock. If you go on, it is "
@@ -193,17 +203,17 @@ msgstr ""
 "%s đã có trong %s nhưng không do GlideDock cài. Nếu tiếp tục, tệp đó sẽ được "
 "chuyển vào Thùng rác."
 
-#: lib/installer.js:353
+#: lib/installer.js:363
 #, javascript-format
 msgid "Warning: %s is not signed, so there is no way to tell who made it."
 msgstr "Cảnh báo: %s không được ký, nên không thể biết ai đã tạo ra nó."
 
-#: lib/installer.js:355
+#: lib/installer.js:365
 #, javascript-format
 msgid "Warning: %s is signed with a key this system does not trust."
 msgstr "Cảnh báo: %s được ký bằng một khóa mà hệ thống này không tin cậy."
 
-#: lib/installer.js:357
+#: lib/installer.js:367
 #, javascript-format
 msgid ""
 "Warning: the signature of %s does not match its contents. It may have been "
@@ -211,7 +221,22 @@ msgid ""
 msgstr ""
 "Cảnh báo: chữ ký của %s không khớp với nội dung. Tệp có thể đã bị sửa đổi."
 
-#: lib/installer.js:359
+#: lib/installer.js:370
+#, javascript-format
+msgid "Package %s: %s"
+msgstr "Gói %s: %s"
+
+#: lib/installer.js:371
+#, javascript-format
+msgid "Package %s"
+msgstr "Gói %s"
+
+#: lib/installer.js:373
+#, javascript-format
+msgid "The signature of %s could not be verified: dpkg-sig is not installed."
+msgstr "Không thể xác minh chữ ký của %s vì chưa cài dpkg-sig."
+
+#: lib/installer.js:375
 #, javascript-format
 msgid ""
 "Flatpak permissions are not shown. Review permissions after install with: %s"
@@ -219,20 +244,20 @@ msgstr ""
 "Quyền của ứng dụng Flatpak không được hiển thị. Sau khi cài, hãy xem lại "
 "quyền bằng lệnh: %s"
 
-#: lib/installer.js:375
+#: lib/installer.js:391
 msgid "The file could not be found."
 msgstr "Không tìm thấy tệp."
 
-#: lib/installer.js:377
+#: lib/installer.js:393
 msgid "This file is not an AppImage."
 msgstr "Tệp này không phải là AppImage."
 
-#: lib/installer.js:379
+#: lib/installer.js:395
 #, javascript-format
 msgid "Flatpak is not installed. Install it with “%s”, then try again."
 msgstr "Flatpak chưa được cài. Hãy cài bằng “%s” rồi thử lại."
 
-#: lib/installer.js:382
+#: lib/installer.js:398
 #, javascript-format
 msgid ""
 "A runtime it needs was not found. Add Flathub for your user with “%s”, then "
@@ -241,40 +266,44 @@ msgstr ""
 "Không tìm thấy runtime mà ứng dụng cần. Hãy thêm Flathub cho tài khoản của "
 "bạn bằng “%s” rồi thử lại."
 
-#: lib/installer.js:385
+#: lib/installer.js:401
 msgid "Its repository could not be reached, or does not have this app."
 msgstr "Không kết nối được kho chứa ứng dụng, hoặc kho không có ứng dụng này."
 
-#: lib/installer.js:387
+#: lib/installer.js:403
 msgid "The download failed. Check the internet connection, then try again."
 msgstr "Tải về thất bại. Hãy kiểm tra kết nối mạng rồi thử lại."
 
-#: lib/installer.js:389
+#: lib/installer.js:405
 msgid "This is not a valid Flatpak file."
 msgstr "Đây không phải là tệp Flatpak hợp lệ."
 
-#: lib/installer.js:391
+#: lib/installer.js:407
 msgid "This file installs a runtime, not an app."
 msgstr "Tệp này cài một runtime, không phải ứng dụng."
 
-#: lib/installer.js:393
+#: lib/installer.js:409
 msgid "There is not enough disk space."
 msgstr "Không đủ dung lượng ổ đĩa."
 
-#: lib/installer.js:397
+#: lib/installer.js:413
 #, javascript-format
 msgid "pkexec is not available. Install it with “%s”, then try again."
 msgstr "Không có pkexec. Hãy cài bằng “%s” rồi thử lại."
 
-#: lib/installer.js:400
+#: lib/installer.js:418
+msgid "This is not a valid DEB package."
+msgstr "Đây không phải là gói DEB hợp lệ."
+
+#: lib/installer.js:420
 msgid "Your account is not allowed to install software."
 msgstr "Tài khoản của bạn không được phép cài phần mềm."
 
-#: lib/installer.js:402
+#: lib/installer.js:422
 msgid "Some packages it depends on could not be found."
 msgstr "Không tìm thấy một số gói phụ thuộc mà gói này cần."
 
-#: lib/installer.js:404
+#: lib/installer.js:424
 #, javascript-format
 msgid ""
 "Its signature is not trusted. If you trust where it comes from, install it "
@@ -283,23 +312,23 @@ msgstr ""
 "Chữ ký của gói không được tin cậy. Nếu bạn tin nguồn của gói, hãy cài trong "
 "terminal bằng “%s”."
 
-#: lib/installer.js:407
+#: lib/installer.js:427
 msgid "It is made for a different kind of computer."
 msgstr "Gói này dành cho loại máy tính khác."
 
-#: lib/installer.js:409
+#: lib/installer.js:429
 msgid "A newer version is installed already."
 msgstr "Máy đã có phiên bản mới hơn."
 
-#: lib/installer.js:411
+#: lib/installer.js:431
 msgid "Another installation is running. Try again once it has finished."
 msgstr "Đang có một tiến trình cài đặt khác. Hãy thử lại khi nó xong."
 
-#: lib/installer.js:413
+#: lib/installer.js:433
 msgid "This is not a valid RPM package."
 msgstr "Đây không phải là gói RPM hợp lệ."
 
-#: lib/installer.js:415
+#: lib/installer.js:435
 msgid "This is a source package: the code to build an app, not the app itself."
 msgstr ""
 "Đây là gói mã nguồn, dùng để build ứng dụng, không phải bản ứng dụng để cài."
@@ -576,11 +605,9 @@ msgstr "Kéo thả để cài đặt"
 
 #: prefs.js:198
 msgid ""
-"Drag an AppImage, Flatpak or RPM file onto the dock to install it and pin it "
-"there"
-msgstr ""
-"Kéo một tệp AppImage, Flatpak hoặc RPM vào dock để cài đặt và ghim nó lên "
-"dock"
+"Drag an AppImage, Flatpak, RPM or DEB file onto the dock to install it and "
+"pin it there"
+msgstr "Kéo một tệp AppImage, Flatpak, RPM hoặc DEB vào dock để cài đặt và ghim nó lên dock"
 
 #: prefs.js:202
 msgid "Appearance"

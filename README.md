@@ -17,7 +17,7 @@ A small, smooth dock for GNOME Shell with magnifying icons and pinned, running, 
 - Bottom, left or right edge, with optional intellihide
 - Can replace the overview dash
 - Launch bounce and minimize-into-icon animations
-- Drag-and-drop install: drop an AppImage, Flatpak or RPM file on the dock to install the app and pin it
+- Drag-and-drop install: drop an AppImage, Flatpak, RPM or DEB file on the dock to install the app and pin it
 - English and Vietnamese translations
 
 ## Drag-and-Drop Install
@@ -38,8 +38,9 @@ Drag-to-install is **off by default**. Turn it on in the extension settings: Pre
 | `.AppImage` | Made executable (`chmod +x`), moved to `~/Applications`, and given a `.desktop` launcher with its own name and icon, created automatically | No |
 | `.flatpakref`, `.flatpak` | `flatpak install --user -y`. The app's permissions are not shown before installing; check them afterwards with `flatpak info --show-permissions <app-id>` | No |
 | `.rpm` | `pkexec dnf install -y`; GNOME shows a password prompt. dnf does not check the signature of a package file, so GlideDock checks it first with `rpm --checksig` and warns in the confirm dialog if the package is unsigned, signed with a key your system does not trust, or does not match its signature | Yes |
+| `.deb` | `pkexec apt install -y`; GNOME shows a password prompt. The dialog shows the package name and description from `dpkg-deb --info`. apt does not check the signature of a package file either, so GlideDock checks it with `dpkg-sig --verify` and warns if it is unsigned or not trusted. Without `dpkg-sig` (most systems), the dialog says the signature could not be verified | Yes |
 
-Tested on: GNOME 47–51 (Fedora 44)
+Tested on: GNOME 47–51 (Fedora 44). DEB support has only been tested with stand-ins for `apt` and `dpkg`, not yet on Debian or Ubuntu.
 
 Good to know:
 
@@ -59,6 +60,9 @@ flatpak uninstall --user <app id>
 
 # RPM
 sudo dnf remove <package>
+
+# DEB
+sudo apt remove <package>
 ```
 
 <details>
@@ -71,7 +75,7 @@ On Wayland, GNOME Shell cannot receive files dropped by other apps; only a windo
 ## Requirements
 
 - GNOME Shell 45, 46, 47, 48, 49, 50 or 51 (on 51 the blur background has square corners)
-- For drag-and-drop install: `gjs` with GTK 4 (installed with GNOME), plus `flatpak` for Flatpak files, and `dnf` and `pkexec` for RPM files (Fedora and other dnf-based systems). On systems without `dnf` (apt, pacman), dropping an RPM shows that it is not supported
+- For drag-and-drop install: `gjs` with GTK 4 (installed with GNOME), plus `flatpak` for Flatpak files, `dnf` and `pkexec` for RPM files (Fedora and other dnf-based systems), and `apt` and `pkexec` for DEB files (Debian, Ubuntu and systems based on them). Dropping a package your system cannot install, such as an RPM on Ubuntu or a DEB on Fedora, shows that it is not supported
 - To build: `gnome-extensions`, `glib-compile-schemas`, `gjs`, `msgfmt`, `zip`, `unzip`, `python3`
 
 ```bash

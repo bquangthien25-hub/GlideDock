@@ -169,7 +169,7 @@
     <key name="drop-to-install" type="b">
       <default>false</default>
       <summary>Drop to install</summary>
-      <description>Install apps from AppImage, .flatpakref, .flatpak and .rpm files dragged onto the dock, after asking, and pin them to it.</description>
+      <description>Install apps from AppImage, .flatpakref, .flatpak, .rpm and .deb files dragged onto the dock, after asking, and pin them to it.</description>
     </key>
   </schema>
 </schemalist>
