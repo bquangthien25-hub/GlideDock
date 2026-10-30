@@ -1,0 +1,10 @@
+[33me7449b0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m update new readme notification supported Gnome Shell 51
+[33mf3c3a29[m feat: bump version to 3 and add GNOME 51 support
+[33mfb90b1d[m fix(blur): guard Shell.GLSLEffect for GNOME 51 compatibility
+[33m02350d5[m fix(dock): update St.ButtonMask constants with fallback for GNOME 51
+[33m8735ece[m update new readme
+[33m117f87a[m fix: lagging fan-out and open file when we open file or folder in download folder on the dock
+[33me416f9a[m fix
+[33m9e4fef8[m fix(stacks): let a click on a row reach the row
+[33m5563085[m fix(click): minimize focused single-window app by default
+[33m8bf338d[m chore(i18n): update translation template

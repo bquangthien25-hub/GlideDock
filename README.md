@@ -31,18 +31,21 @@ Drag an app file onto the dock to install it, much like dragging an app into App
 3. Drop it and confirm.
 4. A placeholder with a spinner shows up in the dock while the app installs. When it is done, the app's own icon takes its place and a notification says so.
 
-| File | How it is installed | Password |
+Drag-to-install is **off by default**. Turn it on in the extension settings: Preferences → Behavior → Drop to install.
+
+| File | How it is installed | Root |
 |---|---|---|
-| `.AppImage` | Moved to `~/Applications`, made executable, and given a launcher with its own name and icon | No |
-| `.flatpakref`, `.flatpak` | `flatpak install --user` | No |
-| `.rpm` | `pkexec dnf install`; GNOME asks for your password | Yes |
+| `.AppImage` | Made executable (`chmod +x`), moved to `~/Applications`, and given a `.desktop` launcher with its own name and icon, created automatically | No |
+| `.flatpakref`, `.flatpak` | `flatpak install --user -y` | No |
+| `.rpm` | `pkexec dnf install -y`; GNOME shows a password prompt. dnf checks the package signature: if it is unsigned or its key is not trusted, dnf stops and GlideDock shows the command to install it anyway | Yes |
+
+Tested on: GNOME 47–51 (Fedora 44)
 
 Good to know:
 
 - **Updates:** dropping an app that is already installed replaces it. GlideDock asks before it does. An older AppImage of the same app goes to the Trash.
 - **One at a time:** if you drop more files while an app is installing, they wait their turn.
 - **Errors** show up as a notification that says what went wrong, such as a missing Flatpak runtime, a missing RPM dependency, or a package signature that is not trusted. Where there is a fix, the notification gives the command to run.
-- **Turning it off:** Preferences → Behavior → Drop to install.
 
 Removing an installed app:
 
