@@ -96,6 +96,16 @@ if unzip -Z1 "$zip_path" | grep -qx 'schemas/gschemas.compiled'; then
     zip -q -d "$zip_path" schemas/gschemas.compiled
 fi
 
+# Translation sources (po/*.po, *.pot) are for development only; the shell
+# reads the compiled locale/*/LC_MESSAGES/*.mo. extensions.gnome.org warns
+# about them (EGO-P-006), so strip any that slipped in.
+if unzip -Z1 "$zip_path" | grep -qE '(^po/|\.pot?$)'; then
+    zip -q -d "$zip_path" 'po/*' '*.po' '*.pot' > /dev/null || true
+fi
+if unzip -Z1 "$zip_path" | grep -E '(^po/|\.pot?$)'; then
+    fail "translation sources are still in $zip_path"
+fi
+
 domain=$(field gettext-domain)
 locales=()
 for po in po/*.po; do
