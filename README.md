@@ -1,4 +1,5 @@
 # GlideDock
+if want version for KDE this link: https://github.com/bquangthien25-hub/GLIDEDOCK-KDE.git
 
 A small, smooth dock for GNOME Shell with magnifying icons and pinned, running, Trash and Downloads items.
 
