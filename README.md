@@ -14,6 +14,7 @@ A small, smooth dock for GNOME Shell with magnifying icons and pinned, running, 
 
 - Magnifying icons that follow the pointer, without relayout
 - Pinned and running apps, with running indicators
+- Drag a pinned app along the dock to reorder it; press `Esc` while dragging to put it back
 - Trash and Downloads at the end of the dock; click the Downloads folder to fan out its latest files
 - Bottom, left or right edge, with optional intellihide
 - Can replace the overview dash
